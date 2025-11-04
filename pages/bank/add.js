@@ -33,11 +33,11 @@ export default function BankAdd() {
         try {
             const appConfig = JSON.parse(appConfigStr);
             setApplicationData({
-                name: appConfig.name || 'Ciroos AI',
+                name: appConfig.name || 'CrownDana',
                 healthy: appConfig.healthy || false,
             });
         } catch (e) {
-            setApplicationData({ name: 'Ciroos AI', healthy: false });
+            setApplicationData({ name: 'CrownDana', healthy: false });
         }
     }
   }, []);
@@ -85,8 +85,8 @@ export default function BankAdd() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Tambah Rekening Bank</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Add Bank Account`} />
+        <title>{applicationData?.name || 'CrownDana'} | Tambah Rekening Bank</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Add Bank Account`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

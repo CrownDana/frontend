@@ -54,12 +54,12 @@ const Withdraw = () => {
             if (appConfig.max_withdraw) setMaxWithdraw(Number(appConfig.max_withdraw));
             if (appConfig.withdraw_charge) setFee(Number(appConfig.withdraw_charge));
             setApplicationData({
-                name: appConfig.name || 'Ciroos AI',
+                name: appConfig.name || 'CrownDana',
                 healthy: appConfig.healthy || false,
             });
         } catch (e) {
             console.error("Failed to parse application data from localStorage", e);
-            setApplicationData({ name: 'Ciroos AI', healthy: false });
+            setApplicationData({ name: 'CrownDana', healthy: false });
         }
     }
 
@@ -145,8 +145,8 @@ const Withdraw = () => {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Penarikan Dana</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Withdraw Funds`} />
+        <title>{applicationData?.name || 'CrownDana'} | Penarikan Dana</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Withdraw Funds`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

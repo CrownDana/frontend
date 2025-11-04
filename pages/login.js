@@ -22,14 +22,14 @@ export default function Login() {
             try {
                 const parsed = JSON.parse(storedApplication);
                 setApplicationData({
-                    name: parsed.name || 'Ciroos AI',
+                    name: parsed.name || 'CrownDana',
                     healthy: parsed.healthy || false,
                 });
             } catch (e) {
-                setApplicationData({ name: 'Ciroos AI', healthy: false });
+                setApplicationData({ name: 'CrownDana', healthy: false });
             }
         } else {
-            setApplicationData({ name: 'Ciroos AI', healthy: false });
+            setApplicationData({ name: 'CrownDana', healthy: false });
         }
 
         (async () => {
@@ -160,8 +160,8 @@ export default function Login() {
     return (
         <>
             <Head>
-                <title>{applicationData?.name || 'Ciroos AI'} | Login</title>
-                <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Description`} />
+                <title>{applicationData?.name || 'CrownDana'} | Login</title>
+                <meta name="description" content={`${applicationData?.name || 'CrownDana'} Description`} />
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
@@ -183,7 +183,7 @@ export default function Login() {
                                 <div className="w-40 h-40 rounded-2xl flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300 mb-0">
                                     <Image
                                         src="/logo_full.svg"
-                                        alt="Ciroos AI Logo"
+                                        alt="CrownDana Logo"
                                         className="w-full h-full object-contain relative z-10"
                                         width={120}
                                         height={120}

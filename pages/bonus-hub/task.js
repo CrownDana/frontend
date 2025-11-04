@@ -36,14 +36,14 @@ export default function Bonus() {
       try {
         const parsed = JSON.parse(storedApplication); 
         setApplicationData({
-          name: parsed.name || 'Ciroos AI',
+          name: parsed.name || 'CrownDana',
           healthy: parsed.healthy || false,
         });
       } catch (e) {
-        setApplicationData({ name: 'Ciroos AI', healthy: false });
+        setApplicationData({ name: 'CrownDana', healthy: false });
       }
     } else {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   }, []);
 
@@ -90,8 +90,8 @@ export default function Bonus() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Bonus Tasks</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Bonus Tasks`} />
+        <title>{applicationData?.name || 'CrownDana'} | Bonus Tasks</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Bonus Tasks`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

@@ -255,7 +255,7 @@ export default function Register() {
                 <div className="w-40 h-40 rounded-2xl flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300 mb-0">
                   <Image
                     src="/logo_full.svg"
-                    alt="Ciroos AI Logo"
+                    alt="CrownDana Logo"
                     className="w-full h-full object-contain relative z-10"
                     width={120}
                     height={120}

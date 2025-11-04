@@ -20,8 +20,8 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Redirecting...</title>
-                <meta name="description" content="Ciroos AI" />
+                <title>CrownDana - Investasi Cerdas</title>
+                <meta name="description" content="CrownDana - Investasi Cerdas" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
         </>

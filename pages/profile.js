@@ -38,7 +38,7 @@ export default function Profile() {
     }
 
     let appData = {
-      name: 'Ciroos AI',
+      name: 'CrownDana',
       healthy: false,
       link_app: '',
       link_cs: '',
@@ -49,7 +49,7 @@ export default function Profile() {
       if (rawApp) {
         const parsedApp = JSON.parse(rawApp);
         appData = {
-          name: parsedApp.name || 'Ciroos AI',
+          name: parsedApp.name || 'CrownDana',
           healthy: parsedApp.healthy ?? false,
           link_app: parsedApp.link_app || parsedApp.link_app_url || '',
           link_cs: parsedApp.link_cs || parsedApp.link_cs_url || '',
@@ -113,8 +113,8 @@ export default function Profile() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Profile</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Profile`} />
+        <title>{applicationData?.name || 'CrownDana'} | Profile</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Profile`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

@@ -36,11 +36,11 @@ export default function BankEdit() {
         try {
             const appConfig = JSON.parse(appConfigStr);
             setApplicationData({
-                name: appConfig.name || 'Ciroos AI',
+                name: appConfig.name || 'CrownDana',
                 healthy: appConfig.healthy || false,
             });
         } catch (e) {
-            setApplicationData({ name: 'Ciroos AI', healthy: false });
+            setApplicationData({ name: 'CrownDana', healthy: false });
         }
     }
   }, [id]);
@@ -131,8 +131,8 @@ export default function BankEdit() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Perbarui Informasi Rekening</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Edit Bank Account`} />
+        <title>{applicationData?.name || 'CrownDana'} | Perbarui Informasi Rekening</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Edit Bank Account`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

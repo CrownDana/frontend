@@ -16,22 +16,22 @@ export default function About() {
       try {
         const parsed = JSON.parse(storedApplication);
         setApplicationData({
-          name: parsed.name || 'Ciroos AI',
+          name: parsed.name || 'CrownDana',
           healthy: parsed.healthy || false,
         });
       } catch (e) {
-        setApplicationData({ name: 'Ciroos AI', healthy: false });
+        setApplicationData({ name: 'CrownDana', healthy: false });
       }
     } else {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   }, []);
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Tentang Kami</title>
-        <meta name="description" content={`Tentang ${applicationData?.name || 'Ciroos AI'}`} />
+        <title>{applicationData?.name || 'CrownDana'} | Tentang Kami</title>
+        <meta name="description" content={`Tentang ${applicationData?.name || 'CrownDana'}`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -80,7 +80,7 @@ export default function About() {
                 onError={(e) => { e.target.style.display = 'none'; }}
               />
             </div>
-            <h2 className="text-xl font-bold text-white mb-1">{applicationData?.name || 'Ciroos AI'}</h2>
+            <h2 className="text-xl font-bold text-white mb-1">{applicationData?.name || 'CrownDana'}</h2>
             <p className="text-white/60 text-sm">Platform Investasi Properti Premium</p>
           </div>
         </div>
@@ -90,10 +90,10 @@ export default function About() {
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10">
             <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
               <Icon icon="mdi:earth" className="w-5 h-5 text-[#9900cc]" />
-              Latar Belakang {applicationData?.name || 'Ciroos AI'}
+              Latar Belakang {applicationData?.name || 'CrownDana'}
             </h3>
             <p className="text-sm text-white/70 leading-relaxed">
-              {applicationData?.name || 'Ciroos AI'} adalah platform investasi yang berpusat di California, United States of America, didirikan oleh {applicationData?.company || 'Ciroos, Inc'} dengan visi menciptakan akses investasi properti premium bagi semua kalangan.
+              {applicationData?.name || 'CrownDana'} adalah platform investasi yang berpusat di California, United States of America, didirikan oleh {applicationData?.company || 'Ciroos, Inc'} dengan visi menciptakan akses investasi properti premium bagi semua kalangan.
             </p>
             <p className="mt-2 text-sm text-white/70 leading-relaxed">
               Platform ini lahir untuk menghapus hambatan tradisional dalam kepemilikan properti, sehingga investor global dapat berpartisipasi dengan modal yang lebih terjangkau namun tetap mendapatkan potensi keuntungan yang signifikan.
@@ -154,7 +154,7 @@ export default function About() {
               Kesimpulan
             </h3>
             <p className="text-sm text-white/70 leading-relaxed">
-              {applicationData?.name || 'Ciroos AI'} hadir untuk menjadi penghubung antara pasar properti kelas atas dan investor global. Dengan pengelolaan yang profesional, transparansi penuh, serta komitmen pada keamanan, kami menciptakan peluang investasi yang aman, menguntungkan, dan dapat diakses oleh semua orang.
+              {applicationData?.name || 'CrownDana'} hadir untuk menjadi penghubung antara pasar properti kelas atas dan investor global. Dengan pengelolaan yang profesional, transparansi penuh, serta komitmen pada keamanan, kami menciptakan peluang investasi yang aman, menguntungkan, dan dapat diakses oleh semua orang.
             </p>
           </div>
         </div>

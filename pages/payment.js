@@ -58,14 +58,14 @@ export default function Payment() {
       try {
         const parsed = JSON.parse(storedApplication);
         setApplicationData({
-          name: parsed.name || 'Ciroos AI',
+          name: parsed.name || 'CrownDana',
           healthy: parsed.healthy || false,
         });
       } catch (e) {
-        setApplicationData({ name: 'Ciroos AI', healthy: false });
+        setApplicationData({ name: 'CrownDana', healthy: false });
       }
     } else {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   }, [router.query.order_id]);
 
@@ -125,8 +125,8 @@ export default function Payment() {
     return (
       <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center p-4 relative overflow-hidden">
         <Head>
-          <title>{applicationData?.name || 'Ciroos AI'} | Pembayaran</title>
-          <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Pembayaran`} />
+          <title>{applicationData?.name || 'CrownDana'} | Pembayaran</title>
+          <meta name="description" content={`${applicationData?.name || 'CrownDana'} Pembayaran`} />
           <link rel="icon" href="/favicon.png" />
         </Head>
         
@@ -157,8 +157,8 @@ export default function Payment() {
     return (
       <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center p-4 relative overflow-hidden">
         <Head>
-          <title>{applicationData?.name || 'Ciroos AI'} | Pembayaran</title>
-          <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Pembayaran`} />
+          <title>{applicationData?.name || 'CrownDana'} | Pembayaran</title>
+          <meta name="description" content={`${applicationData?.name || 'CrownDana'} Pembayaran`} />
           <link rel="icon" href="/favicon.png" />
         </Head>
         
@@ -202,8 +202,8 @@ export default function Payment() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] py-8 px-4 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Pembayaran</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Pembayaran`} />
+        <title>{applicationData?.name || 'CrownDana'} | Pembayaran</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Pembayaran`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

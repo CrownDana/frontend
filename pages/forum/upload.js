@@ -53,14 +53,14 @@ export default function UploadWithdrawal() {
     try {
       const parsed = JSON.parse(storedApplication); 
       setApplicationData({
-        name: parsed.name || 'Ciroos AI',
+        name: parsed.name || 'CrownDana',
         healthy: parsed.healthy || false,
       });
     } catch (e) {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   } else {
-    setApplicationData({ name: 'Ciroos AI', healthy: false });
+    setApplicationData({ name: 'CrownDana', healthy: false });
   }
     }, []);
 
@@ -139,8 +139,8 @@ export default function UploadWithdrawal() {
     return (
         <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
            <Head>
-              <title>{applicationData?.name || 'Ciroos AI'} | Unggah Testimoni</title>
-              <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Upload Testimonial`} />
+              <title>{applicationData?.name || 'CrownDana'} | Unggah Testimoni</title>
+              <meta name="description" content={`${applicationData?.name || 'CrownDana'} Upload Testimonial`} />
               <link rel="icon" href="/favicon.png" />
             </Head>
 

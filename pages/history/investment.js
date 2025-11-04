@@ -41,14 +41,14 @@ export default function RiwayatDeposit() {
     try {
       const parsed = JSON.parse(storedApplication); 
       setApplicationData({
-        name: parsed.name || 'Ciroos AI',
+        name: parsed.name || 'CrownDana',
         healthy: parsed.healthy || false,
       });
     } catch (e) {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   } else {
-    setApplicationData({ name: 'Ciroos AI', healthy: false });
+    setApplicationData({ name: 'CrownDana', healthy: false });
   }
   }, [page]);
 
@@ -240,7 +240,7 @@ export default function RiwayatDeposit() {
     return (
       <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center relative overflow-hidden">
         <Head>
-          <title>{applicationData?.name || 'Ciroos AI'} | Riwayat Investasi</title>
+          <title>{applicationData?.name || 'CrownDana'} | Riwayat Investasi</title>
         </Head>
         <div className="stars"></div>
         <div className="stars1"></div>
@@ -261,8 +261,8 @@ export default function RiwayatDeposit() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Riwayat Investasi</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Investment History`} />
+        <title>{applicationData?.name || 'CrownDana'} | Riwayat Investasi</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Investment History`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

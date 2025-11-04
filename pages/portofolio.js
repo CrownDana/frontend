@@ -43,15 +43,15 @@ export default function InvestasiSaya() {
     try {
       const parsed = JSON.parse(storedApplication);
       setApplicationData({
-        name: parsed.name || 'Ciroos AI',
+        name: parsed.name || 'CrownDana',
         healthy: parsed.healthy || false,
         // tambahkan properti lain jika diperlukan
       });
     } catch (e) {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   } else {
-    setApplicationData({ name: 'Ciroos AI', healthy: false });
+    setApplicationData({ name: 'CrownDana', healthy: false });
   }
   }, [router]);
 
@@ -118,8 +118,8 @@ export default function InvestasiSaya() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Portofolio Saya</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Portfolio`} />
+        <title>{applicationData?.name || 'CrownDana'} | Portofolio Saya</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Portfolio`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

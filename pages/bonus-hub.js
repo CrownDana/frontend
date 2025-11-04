@@ -31,14 +31,14 @@ export default function BonusHub() {
     try {
       const parsed = JSON.parse(storedApplication); 
       setApplicationData({
-        name: parsed.name || 'Ciroos AI',
+        name: parsed.name || 'CrownDana',
         healthy: parsed.healthy || false,
       });
     } catch (e) {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   } else {
-    setApplicationData({ name: 'Ciroos AI', healthy: false });
+    setApplicationData({ name: 'CrownDana', healthy: false });
   }
   }, []);
 
@@ -49,8 +49,8 @@ export default function BonusHub() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Bonus Hub</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Bonus Hub`} />
+        <title>{applicationData?.name || 'CrownDana'} | Bonus Hub</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Bonus Hub`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

@@ -83,14 +83,14 @@ export default function SpinWheel() {
     try {
       const parsed = JSON.parse(storedApplication);
       setApplicationData({
-        name: parsed.name || 'Ciroos AI',
+        name: parsed.name || 'CrownDana',
         healthy: parsed.healthy || false,
       });
     } catch (e) {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   } else {
-    setApplicationData({ name: 'Ciroos AI', healthy: false });
+    setApplicationData({ name: 'CrownDana', healthy: false });
   }
   }, []);
 
@@ -256,8 +256,8 @@ export default function SpinWheel() {
     return (
       <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center relative overflow-hidden">
         <Head>
-          <title>{applicationData?.name || 'Ciroos AI'} | Spin Wheel</title>
-          <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Spin Wheel`} />
+          <title>{applicationData?.name || 'CrownDana'} | Spin Wheel</title>
+          <meta name="description" content={`${applicationData?.name || 'CrownDana'} Spin Wheel`} />
           <link rel="icon" href="/favicon.png" />
         </Head>
         <div className="stars"></div>
@@ -277,8 +277,8 @@ export default function SpinWheel() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Spin Wheel</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Spin Wheel`} />
+        <title>{applicationData?.name || 'CrownDana'} | Spin Wheel</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Spin Wheel`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

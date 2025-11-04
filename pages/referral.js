@@ -48,14 +48,14 @@ export default function Komisi() {
       try {
         const parsed = JSON.parse(storedApplication);
         setApplicationData({
-          name: parsed.name || 'Ciroos AI',
+          name: parsed.name || 'CrownDana',
           healthy: parsed.healthy || false,
         });
       } catch (e) {
-        setApplicationData({ name: 'Ciroos AI', healthy: false });
+        setApplicationData({ name: 'CrownDana', healthy: false });
       }
     } else {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
   }, []);
 
@@ -73,8 +73,8 @@ export default function Komisi() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Referral</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Referral`} />
+        <title>{applicationData?.name || 'CrownDana'} | Referral</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Referral`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

@@ -54,7 +54,7 @@ export default function Dashboard() {
       try {
         const parsed = JSON.parse(storedApplication);
         setApplicationData({
-          name: parsed.name || 'Ciroos AI',
+          name: parsed.name || 'CrownDana',
           healthy: parsed.healthy || false,
           link_app: parsed.link_app,
           link_cs: parsed.link_cs,
@@ -65,10 +65,10 @@ export default function Dashboard() {
           withdraw_charge: parsed.withdraw_charge
         });
       } catch (e) {
-        setApplicationData({ name: 'Ciroos AI', healthy: false });
+        setApplicationData({ name: 'CrownDana', healthy: false });
       }
     } else {
-      setApplicationData({ name: 'Ciroos AI', healthy: false });
+      setApplicationData({ name: 'CrownDana', healthy: false });
     }
     
     fetchProducts();
@@ -143,8 +143,8 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] pb-32 relative overflow-hidden">
       <Head>
-        <title>{applicationData?.name || 'Ciroos AI'} | Dashboard</title>
-        <meta name="description" content={`${applicationData?.name || 'Ciroos AI'} Dashboard`} />
+        <title>{applicationData?.name || 'CrownDana'} | Dashboard</title>
+        <meta name="description" content={`${applicationData?.name || 'CrownDana'} Dashboard`} />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -174,7 +174,7 @@ export default function Dashboard() {
             />
             <div className="hidden items-center gap-2" style={{ display: 'none' }}>
               <Icon icon="mdi:alpha-c-circle" className="text-[#9900cc] w-8 h-8" />
-              <span className="text-white font-bold text-lg">{applicationData?.name || 'Ciroos AI'}</span>
+              <span className="text-white font-bold text-lg">{applicationData?.name || 'CrownDana'}</span>
             </div>
           </div>
           
@@ -417,7 +417,7 @@ export default function Dashboard() {
               <div className="w-full aspect-square bg-gradient-to-r from-[#9900cc] to-[#0058BC] flex items-center justify-center relative overflow-hidden">
                 <Image 
                   src="/popup.png" 
-                  alt="Welcome to Ciroos AI" 
+                  alt="Welcome to CrownDana" 
                   className="w-full h-full object-cover"
                   layout="fill"
                   onError={(e) => {
