@@ -42,7 +42,7 @@ export default function About() {
                       <div className="shooting-stars"></div>
 
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Navigation */}
       <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -54,7 +54,7 @@ export default function About() {
             <Icon icon="mdi:arrow-left" className="w-5 h-5 text-white" />
           </button>
           <div className="flex items-center gap-3 mx-auto">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center">
               <Icon icon="mdi:information-outline" className="w-6 h-6 text-white" />
             </div>
             <div>
@@ -68,7 +68,7 @@ export default function About() {
       <div className="max-w-md mx-auto p-4 relative z-10">
         {/* Header Section */}
         <div className="relative mb-6 mt-2">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur opacity-20"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur opacity-20"></div>
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10 text-center">
             <div className="w-40 h-auto relative mx-auto mb-3">
               <Image 
@@ -89,7 +89,7 @@ export default function About() {
         <div className="space-y-6">
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10">
             <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
-              <Icon icon="mdi:earth" className="w-5 h-5 text-[#F45D16]" />
+              <Icon icon="mdi:earth" className="w-5 h-5 text-[#9900cc]" />
               Latar Belakang {applicationData?.name || 'Ciroos AI'}
             </h3>
             <p className="text-sm text-white/70 leading-relaxed">
@@ -113,8 +113,8 @@ export default function About() {
                 { title: "Keamanan & Kepatuhan", text: "Mematuhi regulasi investasi internasional dan menerapkan sistem keamanan yang ketat." }
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 flex-shrink-0 rounded-full bg-gradient-to-br from-[#F45D16]/20 to-[#0058BC]/20 flex items-center justify-center border border-white/10">
-                    <Icon icon="mdi:check" className="text-[#F45D16] w-4 h-4" />
+                  <div className="w-6 h-6 flex-shrink-0 rounded-full bg-gradient-to-br from-[#9900cc]/20 to-[#0058BC]/20 flex items-center justify-center border border-white/10">
+                    <Icon icon="mdi:check" className="text-[#9900cc] w-4 h-4" />
                   </div>
                   <div>
                     <span className="font-semibold text-white text-sm">{item.title}</span>
@@ -127,7 +127,7 @@ export default function About() {
 
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10">
             <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
-              <Icon icon="mdi:diamond-stone" className="w-5 h-5 text-[#F45D16]" />
+              <Icon icon="mdi:diamond-stone" className="w-5 h-5 text-[#9900cc]" />
               Nilai Utama
             </h3>
             <ul className="space-y-3">
@@ -156,55 +156,6 @@ export default function About() {
             <p className="text-sm text-white/70 leading-relaxed">
               {applicationData?.name || 'Ciroos AI'} hadir untuk menjadi penghubung antara pasar properti kelas atas dan investor global. Dengan pengelolaan yang profesional, transparansi penuh, serta komitmen pada keamanan, kami menciptakan peluang investasi yang aman, menguntungkan, dan dapat diakses oleh semua orang.
             </p>
-          </div>
-        </div>
-
-        {/* Legal Certificates Section */}
-        <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10 mt-6">
-          <h2 className="text-xl font-bold text-white mb-4 text-center">Sertifikat Legal</h2>
-          
-          <div className="space-y-6">
-            {/* Certificate of Incorporation */}
-            <div className="bg-gradient-to-br from-[#0058BC]/10 to-[#0058BC]/5 p-4 rounded-2xl border border-blue-400/20">
-              <div className="flex items-center gap-2 mb-3">
-                <Icon icon="mdi:government" className="w-5 h-5 text-blue-300" />
-                <h3 className="text-blue-200 font-semibold text-sm">Sertifikat Pendirian Perusahaan</h3>
-              </div>
-              
-              <div className="relative w-full h-64 rounded-xl overflow-hidden mb-3 border border-blue-400/30 bg-black/20">
-                <Image
-                  src="/certificate-of-incorporation.png"
-                  alt="Certificate of Incorporation"
-                  fill
-                  className="object-contain p-2"
-                />
-              </div>
-              
-              <div className="text-center">
-                <p className="text-white font-bold text-sm">{applicationData?.company || 'Ciroos, Inc'}</p>
-              </div>
-            </div>
-            
-            {/* Employer Identification Number */}
-            <div className="bg-gradient-to-br from-green-900/10 to-green-800/5 p-4 rounded-2xl border border-green-400/20">
-              <div className="flex items-center gap-2 mb-3">
-                <Icon icon="mdi:calculator" className="w-5 h-5 text-green-300" />
-                <h3 className="text-green-200 font-semibold text-sm">Nomor Identifikasi Pemberi Kerja</h3>
-              </div>
-              
-              <div className="relative w-full h-64 rounded-xl overflow-hidden mb-3 border border-green-400/30 bg-black/20">
-                <Image
-                  src="/employer-identification-number.png"
-                  alt="Employer Identification Number"
-                  fill
-                  className="object-contain p-2"
-                />
-              </div>
-              
-              <div className="text-center">
-                <p className="text-white font-bold text-sm">{applicationData?.company || 'Ciroos, Inc'}</p>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -335,7 +286,7 @@ export default function About() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

@@ -131,8 +131,8 @@ export default function GantiSandi() {
       <div className="stars2"></div>
                       <div className="shooting-stars"></div>
 
-      <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Navigation */}
       <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -144,7 +144,7 @@ export default function GantiSandi() {
             <Icon icon="mdi:arrow-left" className="w-5 h-5 text-white" />
           </button>
           <div className="flex items-center gap-3 mx-auto">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center">
               <Icon icon="mdi:lock-reset" className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -192,12 +192,12 @@ export default function GantiSandi() {
             {/* Current Password */}
             <div>
               <label className="block text-sm font-semibold text-white/80 mb-2 flex items-center gap-2">
-                <Icon icon="mdi:lock-outline" className="text-[#F45D16]" />
+                <Icon icon="mdi:lock-outline" className="text-[#9900cc]" />
                 Kata Sandi Saat Ini
               </label>
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#F45D16]/20 to-[#0058BC]/20 rounded-2xl blur-sm opacity-50 group-focus-within:opacity-70 transition-opacity"></div>
-                <div className="relative flex items-center bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 focus-within:border-[#F45D16] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#9900cc]/20 to-[#0058BC]/20 rounded-2xl blur-sm opacity-50 group-focus-within:opacity-70 transition-opacity"></div>
+                <div className="relative flex items-center bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 focus-within:border-[#9900cc] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]">
                 <input
                   type={showPassword.current_password ? "text" : "password"}
                   name="current_password"
@@ -223,12 +223,12 @@ export default function GantiSandi() {
             {/* New Password */}
             <div>
               <label className="block text-sm font-semibold text-white/80 mb-2 flex items-center gap-2">
-                <Icon icon="mdi:key-outline" className="text-[#F45D16]" />
+                <Icon icon="mdi:key-outline" className="text-[#9900cc]" />
                 Kata Sandi Baru
               </label>
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#F45D16]/20 to-[#0058BC]/20 rounded-2xl blur-sm opacity-50 group-focus-within:opacity-70 transition-opacity"></div>
-                <div className="relative flex items-center bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 focus-within:border-[#F45D16] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#9900cc]/20 to-[#0058BC]/20 rounded-2xl blur-sm opacity-50 group-focus-within:opacity-70 transition-opacity"></div>
+                <div className="relative flex items-center bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 focus-within:border-[#9900cc] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]">
                 <input
                   type={showPassword.new_password ? "text" : "password"}
                   name="new_password"
@@ -254,12 +254,12 @@ export default function GantiSandi() {
             {/* Confirm Password */}
             <div>
               <label className="block text-sm font-semibold text-white/80 mb-2 flex items-center gap-2">
-                <Icon icon="mdi:key-check-outline" className="text-[#F45D16]" />
+                <Icon icon="mdi:key-check-outline" className="text-[#9900cc]" />
                 Konfirmasi Kata Sandi
               </label>
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#F45D16]/20 to-[#0058BC]/20 rounded-2xl blur-sm opacity-50 group-focus-within:opacity-70 transition-opacity"></div>
-                <div className="relative flex items-center bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 focus-within:border-[#F45D16] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#9900cc]/20 to-[#0058BC]/20 rounded-2xl blur-sm opacity-50 group-focus-within:opacity-70 transition-opacity"></div>
+                <div className="relative flex items-center bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 focus-within:border-[#9900cc] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]">
                 <input
                   type={showPassword.confirm_password ? "text" : "password"}
                   name="confirm_password"
@@ -286,7 +286,7 @@ export default function GantiSandi() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-4 rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#F45D16]/30 hover:shadow-[#F45D16]/50 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-4 rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#9900cc]/30 hover:shadow-[#9900cc]/50 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <>
@@ -454,7 +454,7 @@ export default function GantiSandi() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

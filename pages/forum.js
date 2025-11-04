@@ -91,7 +91,7 @@ export default function Testimoni() {
     const ImageModal = ({ url, onClose }) => (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-md animate-fadeIn" onClick={onClose}>
           <div className="relative max-w-full max-h-full p-4" onClick={e => e.stopPropagation()}>
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur-xl opacity-50"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur-xl opacity-50"></div>
             <Image
               src={url}
               alt="Bukti Penarikan Besar"
@@ -128,13 +128,13 @@ export default function Testimoni() {
                         <div className="shooting-stars"></div>
 
         <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
         <div className="max-w-sm mx-auto p-4 relative z-10">
           {/* Header Section */}
           <div className="text-center mb-6 pt-2">
             <div className="inline-flex items-center gap-3 mb-2">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
                 <Icon icon="mdi:comment-quote" className="w-7 h-7 text-white" />
               </div>
               <h1 className="text-2xl font-bold text-white">Testimoni</h1>
@@ -146,7 +146,7 @@ export default function Testimoni() {
           <div className="mb-6">
             <button
               onClick={() => router.push('/forum/upload')}
-              className="w-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg shadow-[#F45D16]/30 hover:shadow-[#F45D16]/50 hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg shadow-[#9900cc]/30 hover:shadow-[#9900cc]/50 hover:scale-[1.02] active:scale-[0.98]"
             >
               <Icon icon="mdi:upload" className="w-5 h-5" />
               Unggah Bukti Penarikan
@@ -158,8 +158,8 @@ export default function Testimoni() {
             {loading && (
               <div className="flex flex-col items-center justify-center my-12">
                 <div className="relative">
-                  <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-                  <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+                  <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+                  <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
                 </div>
                 <p className="text-white/70 text-center mt-4 text-sm">Memuat testimoni...</p>
               </div>
@@ -209,10 +209,10 @@ export default function Testimoni() {
 
           {/* Add Testimonial CTA */}
           <div className="relative mt-6">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur opacity-20"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur opacity-20"></div>
             <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10 text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
-                <Icon icon="mdi:star-circle" className="w-5 h-5 text-[#F45D16]" />
+                <Icon icon="mdi:star-circle" className="w-5 h-5 text-[#9900cc]" />
                 <h3 className="text-white font-bold text-base">Bagikan Pengalaman Anda</h3>
               </div>
               <p className="text-white/60 text-xs">Dapatkan bonus Rp 2.000 - Rp 20.000 untuk setiap testimoni yang terverifikasi.</p>
@@ -345,7 +345,7 @@ export default function Testimoni() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 
@@ -394,7 +394,7 @@ function TestimonialCard({ t, setModalImage, formatCurrency }) {
         {/* Header Section with Avatar & Reward */}
         <div className="flex items-center justify-between p-4 border-b border-white/5">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-md flex-shrink-0">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-md flex-shrink-0">
               <Icon icon="mdi:account" className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -420,7 +420,7 @@ function TestimonialCard({ t, setModalImage, formatCurrency }) {
                   unoptimized
                   width={80}
                   height={80}
-                  className="w-20 h-20 object-cover rounded-xl border-2 border-white/10 shadow-lg cursor-pointer hover:scale-105 hover:border-[#F45D16]/30 transition-all duration-200"
+                  className="w-20 h-20 object-cover rounded-xl border-2 border-white/10 shadow-lg cursor-pointer hover:scale-105 hover:border-[#9900cc]/30 transition-all duration-200"
                   onClick={() => setModalImage(imgUrl)}
                 />
               </div>

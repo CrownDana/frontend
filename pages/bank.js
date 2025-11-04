@@ -104,7 +104,7 @@ export default function BankAccount() {
                       <div className="shooting-stars"></div>
 
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Navigation */}
       <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -116,7 +116,7 @@ export default function BankAccount() {
             <Icon icon="mdi:arrow-left" className="w-5 h-5 text-white" />
           </button>
           <div className="flex items-center gap-3 mx-auto">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center">
               <Icon icon="mdi:bank" className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -160,7 +160,7 @@ export default function BankAccount() {
           </div>
           
           <Link href="/bank/add">
-            <button className="w-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-3.5 px-6 rounded-2xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-[#F45D16]/30 hover:shadow-[#F45D16]/50 hover:scale-[1.02] active:scale-[0.98]">
+            <button className="w-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-3.5 px-6 rounded-2xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-[#9900cc]/30 hover:shadow-[#9900cc]/50 hover:scale-[1.02] active:scale-[0.98]">
               <Plus size={20} />
               Tambah Rekening Baru
             </button>
@@ -172,8 +172,8 @@ export default function BankAccount() {
           {loading ? (
             <div className="flex flex-col items-center justify-center my-12">
               <div className="relative">
-                <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-                <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+                <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
               </div>
               <p className="text-white/70 text-center mt-4 text-sm">Memuat data...</p>
             </div>
@@ -399,7 +399,7 @@ export default function BankAccount() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

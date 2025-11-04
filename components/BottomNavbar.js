@@ -16,7 +16,7 @@ export default function BottomNavbar() {
     <div className="w-full py-2">
       <div className="relative">
         {/* Glassmorphism Background with Brand Colors */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#F45D16]/20 via-[#0058BC]/20 to-[#F45D16]/20 rounded-2xl blur-xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#9900cc]/20 via-[#0058BC]/20 to-[#9900cc]/20 rounded-2xl blur-xl"></div>
         
         <div className="relative bg-[#0A0A0A]/80 backdrop-blur-2xl rounded-2xl border border-white/10 shadow-2xl">
           <div className="grid grid-cols-5 gap-1 p-2">
@@ -39,8 +39,8 @@ export default function BottomNavbar() {
                   {/* Active Background Glow */}
                   {isActive && (
                     <>
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#F45D16] to-[#FF6B35] rounded-xl opacity-20 blur-sm"></div>
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#F45D16]/30 to-[#FF6B35]/30 rounded-xl"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#9900cc] to-[#FF6B35] rounded-xl opacity-20 blur-sm"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#9900cc]/30 to-[#FF6B35]/30 rounded-xl"></div>
                     </>
                   )}
                   
@@ -66,7 +66,7 @@ export default function BottomNavbar() {
                   
                   {/* Active Indicator Dot */}
                   {isActive && (
-                    <div className="absolute -bottom-1 w-1 h-1 bg-[#F45D16] rounded-full shadow-[0_0_8px_rgba(244,93,22,0.8)]"></div>
+                    <div className="absolute -bottom-1 w-1 h-1 bg-[#9900cc] rounded-full shadow-[0_0_8px_rgba(244,93,22,0.8)]"></div>
                   )}
                 </button>
               );

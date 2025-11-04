@@ -119,7 +119,7 @@ const Withdraw = () => {
         setErrorMsg(data.message);
       }
     } catch (err) {
-      setErrorMsg('Terjadi kesalahan saat memproses penarikan');
+      setErrorMsg(err.message || 'Terjadi kesalahan saat memproses penarikan');
     }
     setLoading(false);
   };
@@ -133,8 +133,8 @@ const Withdraw = () => {
         <div className="shooting-stars"></div>
         <div className="flex flex-col items-center relative z-10">
           <div className="relative">
-            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
           </div>
           <p className="text-white/70 text-sm mt-4">Memuat data...</p>
         </div>
@@ -156,7 +156,7 @@ const Withdraw = () => {
       <div className="stars2"></div>
       <div className='shooting-stars'></div>
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Navigation */}
       <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -168,7 +168,7 @@ const Withdraw = () => {
             <Icon icon="mdi:arrow-left" className="w-5 h-5 text-white" />
           </button>
           <div className="flex items-center gap-3 mx-auto">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center">
               <Icon icon="mdi:cash-fast" className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -182,11 +182,11 @@ const Withdraw = () => {
       <div className="max-w-md mx-auto p-4 relative z-10">
         {/* Header Section */}
         <div className="relative mb-6 mt-2">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur opacity-20"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur opacity-20"></div>
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
                   <Icon icon="mdi:account-circle" className="text-white w-8 h-8" />
                 </div>
                 <div>
@@ -203,8 +203,8 @@ const Withdraw = () => {
             <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#F45D16]/20 to-[#FF6B35]/20 flex items-center justify-center">
-                    <Icon icon="mdi:wallet" className="w-4 h-4 text-[#F45D16]" />
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#9900cc]/20 to-[#FF6B35]/20 flex items-center justify-center">
+                    <Icon icon="mdi:wallet" className="w-4 h-4 text-[#9900cc]" />
                   </div>
                   <div>
                     <p className="text-[9px] text-white/60 font-medium uppercase tracking-wide">Total Saldo</p>
@@ -228,8 +228,8 @@ const Withdraw = () => {
           {fetching ? (
             <div className="flex flex-col items-center justify-center my-8">
               <div className="relative">
-                <div className="animate-spin rounded-full h-10 w-10 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-                <div className="absolute inset-0 animate-ping rounded-full h-10 w-10 border-2 border-[#F45D16]/40"></div>
+                <div className="animate-spin rounded-full h-10 w-10 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+                <div className="absolute inset-0 animate-ping rounded-full h-10 w-10 border-2 border-[#9900cc]/40"></div>
               </div>
               <p className="text-white/70 text-center mt-4 text-sm">Memuat data rekening...</p>
             </div>
@@ -242,7 +242,7 @@ const Withdraw = () => {
               <p className="text-white/60 text-sm mb-4 px-4">Anda harus menambahkan akun bank untuk melakukan penarikan.</p>
               <button
                 onClick={() => router.push('/bank')}
-                className="bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-[#F45D16]/30 hover:shadow-[#F45D16]/50 hover:scale-[1.02] active:scale-[0.98] mx-auto"
+                className="bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#7700a3] hover:to-[#9900cc] text-white font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-[#9900cc]/30 hover:shadow-[#9900cc]/50 hover:scale-[1.02] active:scale-[0.98] mx-auto"
               >
                 <Icon icon="mdi:bank-plus" className="w-5 h-5" />
                 Tambah Akun Bank
@@ -251,10 +251,10 @@ const Withdraw = () => {
           ) : (
             <div className="space-y-3">
               {bankAccounts.map((bank) => (
-                <div key={bank.id} className={`relative rounded-2xl transition-all duration-300 ${selectedBankId === bank.id ? 'border-2 border-[#F45D16]/80' : 'border border-white/10'}`}>
-                  {selectedBankId === bank.id && <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#FF6B35] rounded-2xl blur opacity-30"></div>}
-                  <label className={`relative flex items-center gap-4 p-4 cursor-pointer rounded-2xl ${selectedBankId === bank.id ? 'bg-gradient-to-br from-[#F45D16]/10 to-[#FF6B35]/10' : 'bg-white/5 hover:bg-white/10'}`}>
-                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${selectedBankId === bank.id ? 'border-[#F45D16] bg-[#F45D16]' : 'border-white/30'}`}>
+                <div key={bank.id} className={`relative rounded-2xl transition-all duration-300 ${selectedBankId === bank.id ? 'border-2 border-[#9900cc]/80' : 'border border-white/10'}`}>
+                  {selectedBankId === bank.id && <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#FF6B35] rounded-2xl blur opacity-30"></div>}
+                  <label className={`relative flex items-center gap-4 p-4 cursor-pointer rounded-2xl ${selectedBankId === bank.id ? 'bg-gradient-to-br from-[#9900cc]/10 to-[#FF6B35]/10' : 'bg-white/5 hover:bg-white/10'}`}>
+                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${selectedBankId === bank.id ? 'border-[#9900cc] bg-[#9900cc]' : 'border-white/30'}`}>
                       {selectedBankId === bank.id && (
                         <Icon icon="mdi:check" className="text-white w-3 h-3" />
                       )}
@@ -268,7 +268,7 @@ const Withdraw = () => {
                       className="sr-only"
                     />
                     <div className="flex items-center gap-3 flex-1">
-                      <div className={`p-3 rounded-2xl ${selectedBankId === bank.id ? 'bg-gradient-to-br from-[#F45D16] to-[#FF6B35]' : 'bg-white/10'}`}>
+                      <div className={`p-3 rounded-2xl ${selectedBankId === bank.id ? 'bg-gradient-to-br from-[#9900cc] to-[#FF6B35]' : 'bg-white/10'}`}>
                         <Icon icon="mdi:bank" className="text-2xl text-white" />
                       </div>
                       <div className="flex-1">
@@ -336,13 +336,13 @@ const Withdraw = () => {
               {/* Withdrawal Amount */}
               <div>
                 <label className="block text-white/80 font-semibold text-sm mb-3 flex items-center gap-2">
-                  <Icon icon="mdi:cash-multiple" className="inline w-4 h-4 mr-1 text-[#F45D16]" />
+                  <Icon icon="mdi:cash-multiple" className="inline w-4 h-4 mr-1 text-[#9900cc]" />
                   Jumlah Penarikan
                 </label>
                 <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#F45D16]/20 to-[#0058BC]/20 rounded-2xl blur-sm opacity-50 group-focus-within:opacity-70 transition-opacity"></div>
-                  <div className="relative flex items-center bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 focus-within:border-[#F45D16] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]">
-                    <div className="flex items-center justify-center w-16 bg-gradient-to-br from-[#F45D16]/20 to-[#FF6B35]/20 h-full border-r border-white/10">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#9900cc]/20 to-[#0058BC]/20 rounded-2xl blur-sm opacity-50 group-focus-within:opacity-70 transition-opacity"></div>
+                  <div className="relative flex items-center bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 focus-within:border-[#9900cc] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]">
+                    <div className="flex items-center justify-center w-16 bg-gradient-to-br from-[#9900cc]/20 to-[#FF6B35]/20 h-full border-r border-white/10">
                       <span className="text-white/90 text-sm font-bold">IDR</span>
                     </div>
                     <input
@@ -539,7 +539,7 @@ const Withdraw = () => {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

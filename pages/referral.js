@@ -85,13 +85,13 @@ export default function Komisi() {
                       <div className="shooting-stars"></div>
 
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       <div className="max-w-md mx-auto p-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-6 pt-2">
           <div className="inline-flex items-center gap-2 mb-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center">
               <Icon icon="mdi:account-multiple" className="w-6 h-6 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-white">Program Referral</h1>
@@ -101,12 +101,12 @@ export default function Komisi() {
 
         {/* Stats Overview - Horizontal Layout */}
         <div className="relative mb-5">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-2xl blur opacity-20"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-2xl blur opacity-20"></div>
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-5 border border-white/10">
             <div className="flex items-center justify-around">
               <div className="text-center">
-                <div className="w-12 h-12 rounded-xl bg-[#F45D16]/10 flex items-center justify-center mx-auto mb-2">
-                  <Icon icon="mdi:account-group" className="w-6 h-6 text-[#F45D16]" />
+                <div className="w-12 h-12 rounded-xl bg-[#9900cc]/10 flex items-center justify-center mx-auto mb-2">
+                  <Icon icon="mdi:account-group" className="w-6 h-6 text-[#9900cc]" />
                 </div>
                 <p className="text-2xl font-bold text-white">{totalReferrals}</p>
                 <p className="text-white/60 text-xs mt-1">Total Tim</p>
@@ -137,7 +137,7 @@ export default function Komisi() {
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-4 border border-white/10">
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2">
-                <Icon icon="mdi:key" className="w-5 h-5 text-[#F45D16]" />
+                <Icon icon="mdi:key" className="w-5 h-5 text-[#9900cc]" />
                 <span className="text-white font-semibold text-sm">Kode Referral</span>
               </div>
               <button
@@ -187,18 +187,18 @@ export default function Komisi() {
         {/* Commission Levels - Vertical Compact Cards */}
         <div className="mb-5">
           <div className="flex items-center gap-2 mb-4">
-            <Icon icon="mdi:trophy" className="w-5 h-5 text-[#F45D16]" />
+            <Icon icon="mdi:trophy" className="w-5 h-5 text-[#9900cc]" />
             <h2 className="text-lg font-bold text-white">Level Komisi</h2>
           </div>
 
           <div className="space-y-3">
             {/* Level 1 */}
             <div className="relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16]/30 to-[#FF6B35]/30 rounded-2xl blur opacity-50"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc]/30 to-[#FF6B35]/30 rounded-2xl blur opacity-50"></div>
               <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-4 border border-white/10">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3 flex-1">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center flex-shrink-0">
                       <Icon icon="mdi:numeric-1" className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1 min-w-0">
@@ -208,7 +208,7 @@ export default function Komisi() {
                         <span className="text-white/60">•</span>
                         <span className="text-green-400">{teamStats[1]?.active || 0} Aktif</span>
                         <span className="text-white/60">•</span>
-                        <span className="text-[#F45D16] font-bold">5%</span>
+                        <span className="text-[#9900cc] font-bold">3%</span>
                       </div>
                     </div>
                   </div>
@@ -224,11 +224,11 @@ export default function Komisi() {
 
             {/* Level 2 */}
             <div className="relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#0058BC]/30 to-[#F45D16]/30 rounded-2xl blur opacity-50"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#0058BC]/30 to-[#9900cc]/30 rounded-2xl blur opacity-50"></div>
               <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-4 border border-white/10">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3 flex-1">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0058BC] to-[#F45D16] flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0058BC] to-[#9900cc] flex items-center justify-center flex-shrink-0">
                       <Icon icon="mdi:numeric-2" className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1 min-w-0">
@@ -287,14 +287,14 @@ export default function Komisi() {
         {/* Benefits - Horizontal Scroll */}
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-4">
-            <Icon icon="mdi:gift" className="w-5 h-5 text-[#F45D16]" />
+            <Icon icon="mdi:gift" className="w-5 h-5 text-[#9900cc]" />
             <h2 className="text-lg font-bold text-white">Keuntungan</h2>
           </div>
 
           <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
             <div className="flex-shrink-0 w-64 bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-4 border border-white/10">
-              <div className="w-10 h-10 rounded-xl bg-[#F45D16]/10 flex items-center justify-center mb-3">
-                <Icon icon="mdi:cash-multiple" className="w-6 h-6 text-[#F45D16]" />
+              <div className="w-10 h-10 rounded-xl bg-[#9900cc]/10 flex items-center justify-center mb-3">
+                <Icon icon="mdi:cash-multiple" className="w-6 h-6 text-[#9900cc]" />
               </div>
               <h4 className="text-white font-bold text-sm mb-2">Komisi Tinggi</h4>
               <p className="text-white/60 text-xs leading-relaxed">
@@ -450,7 +450,7 @@ export default function Komisi() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

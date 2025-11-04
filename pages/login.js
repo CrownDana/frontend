@@ -174,7 +174,7 @@ export default function Login() {
 
                 {/* Gradient overlays matching Ciroos theme */}
                 <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-                <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
                 <div className="relative z-10 w-full max-w-md p-6">
                     <div className="glassmorphism-card rounded-3xl p-8 shadow-2xl animate-fadeIn">
@@ -192,19 +192,19 @@ export default function Login() {
                                             e.target.nextSibling.style.display = 'flex';
                                         }}
                                     />
-                                    <div style={{ display: 'none' }} className="w-40 h-40 bg-gradient-to-br from-[#F45D16] to-[#0058BC] rounded-2xl flex items-center justify-center shadow-xl border border-white/10">
+                                    <div style={{ display: 'none' }} className="w-40 h-40 bg-gradient-to-br from-[#9900cc] to-[#0058BC] rounded-2xl flex items-center justify-center shadow-xl border border-white/10">
                                         <Icon icon="mdi:alpha-c-circle" className="text-white w-24 h-24 drop-shadow-lg" />
                                     </div>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2 text-[#EDE5D9] text-sm font-medium" style={{marginTop: '-10px'}}>
-                                <Icon icon="mdi:shield-check" className="w-4 h-4 text-[#F45D16]" />
+                                <Icon icon="mdi:shield-check" className="w-4 h-4 text-[#9900cc]" />
                                 <span>Secured Platform</span>
                             </div>
                         </div>
                         <div className="mb-8 text-center">
                             <h2 className="text-2xl font-bold text-[#FAF8F6] mb-2 flex items-center justify-center gap-3">
-                                <Icon icon="mdi:login" className="w-6 h-6 text-[#F45D16]" />
+                                <Icon icon="mdi:login" className="w-6 h-6 text-[#9900cc]" />
                                 Selamat Datang Kembali
                             </h2>
                             <p className="text-[#EDE5D9]/80 text-sm flex items-center justify-center gap-2">
@@ -232,7 +232,7 @@ export default function Login() {
                         <form onSubmit={handleSubmit} className="space-y-6 animate-slideUp">
                             <div className="space-y-2">
                                 <label htmlFor="number" className="block text-[#EDE5D9] text-sm font-semibold mb-2 flex items-center gap-2">
-                                    <Icon icon="mdi:phone" className="w-4 h-4 text-[#F45D16]" />
+                                    <Icon icon="mdi:phone" className="w-4 h-4 text-[#9900cc]" />
                                     Nomor HP
                                 </label>
                                 <div className="relative group">
@@ -253,7 +253,7 @@ export default function Login() {
                                         />
                                         <div className="flex items-center shrink-0 px-4">
                                             {/^8\d{8,11}$/.test(formData.number) ? (
-                                                <Icon icon="mdi:check-circle" className="w-5 h-5 shrink-0 text-[#F45D16]" />
+                                                <Icon icon="mdi:check-circle" className="w-5 h-5 shrink-0 text-[#9900cc]" />
                                             ) : (
                                                 <Icon icon="mdi:phone-outline" className="w-5 h-5 shrink-0 text-[#EDE5D9]/30" />
                                             )}
@@ -264,7 +264,7 @@ export default function Login() {
 
                             <div className="space-y-2">
                                 <label htmlFor="password" className="block text-[#EDE5D9] text-sm font-semibold mb-2 flex items-center gap-2">
-                                    <Icon icon="mdi:lock" className="w-4 h-4 text-[#F45D16]" />
+                                    <Icon icon="mdi:lock" className="w-4 h-4 text-[#9900cc]" />
                                     Password
                                 </label>
                                 <div className="relative group">
@@ -298,7 +298,7 @@ export default function Login() {
                                 type="submit"
                                 className={`w-full font-bold py-4 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg border border-white/10 relative overflow-hidden ${
                                     (!maintenanceMode && isFormValid)
-                                        ? 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] hover:shadow-[0_0_30px_rgba(244,93,22,0.4)] hover:scale-105 text-white'
+                                        ? 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] hover:shadow-[0_0_30px_rgba(244,93,22,0.4)] hover:scale-105 text-white'
                                         : 'bg-gray-600/30 text-gray-400 cursor-not-allowed border-gray-600/20'
                                 }`}
                                 disabled={isLoading || !isFormValid || maintenanceMode}
@@ -325,7 +325,7 @@ export default function Login() {
                                 Belum punya akun?
                             </div>
                             <Link href="/register">
-                                <span className="inline-flex items-center gap-2 text-[#FAF8F6] font-semibold hover:text-[#F45D16] transition-colors duration-200 bg-[#F45D16]/10 px-5 py-2.5 rounded-xl hover:bg-[#F45D16]/20 cursor-pointer border border-[#F45D16]/20 hover:border-[#F45D16]/40">
+                                <span className="inline-flex items-center gap-2 text-[#FAF8F6] font-semibold hover:text-[#9900cc] transition-colors duration-200 bg-[#9900cc]/10 px-5 py-2.5 rounded-xl hover:bg-[#9900cc]/20 cursor-pointer border border-[#9900cc]/20 hover:border-[#9900cc]/40">
                                     <Icon icon="mdi:account-plus" className="w-4 h-4" />
                                     Daftar Sekarang
                                     <Icon icon="mdi:arrow-right" className="w-4 h-4" />
@@ -454,7 +454,7 @@ export default function Login() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

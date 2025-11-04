@@ -150,7 +150,7 @@ export default function UploadWithdrawal() {
             <div className="stars2"></div>
             <div className="shooting-stars"></div>
             <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-            <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
             {/* Top Navigation */}
             <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -171,7 +171,7 @@ export default function UploadWithdrawal() {
                 {/* Rules Section */}
                 <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10 mb-6">
                     <div className="flex items-center gap-3 mb-3">
-                        <Icon icon="mdi:information" className="w-5 h-5 text-[#F45D16]" />
+                        <Icon icon="mdi:information" className="w-5 h-5 text-[#9900cc]" />
                         <h3 className="text-base font-bold text-white">Aturan Pengunggahan</h3>
                     </div>
                     <ul className="pl-5 mb-4 text-sm text-white/70 list-disc space-y-1.5">
@@ -203,7 +203,7 @@ export default function UploadWithdrawal() {
                 {/* Upload Form */}
                 <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10 mb-6">
                     <div className="flex items-center gap-3 mb-4">
-                        <Icon icon="mdi:upload" className="w-5 h-5 text-[#F45D16]" />
+                        <Icon icon="mdi:upload" className="w-5 h-5 text-[#9900cc]" />
                         <h3 className="text-base font-bold text-white">Formulir Unggahan</h3>
                     </div>
 
@@ -226,7 +226,7 @@ export default function UploadWithdrawal() {
                         <div className="mb-4">
                             <label className="block text-white/70 text-sm font-semibold mb-2">Deskripsi (5-60 karakter)</label>
                             <div className="relative group">
-                                <div className={`bg-white/5 border border-white/10 rounded-2xl transition-all duration-300 ${!canUpload || isSubmitting ? 'opacity-50' : 'focus-within:border-[#F45D16] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]'}`}>
+                                <div className={`bg-white/5 border border-white/10 rounded-2xl transition-all duration-300 ${!canUpload || isSubmitting ? 'opacity-50' : 'focus-within:border-[#9900cc] focus-within:shadow-[0_0_20px_rgba(244,93,22,0.2)]'}`}>
                                     <textarea
                                         value={comment}
                                         onChange={(e) => setComment(e.target.value)}
@@ -267,7 +267,7 @@ export default function UploadWithdrawal() {
                         <button
                             type="submit"
                             disabled={isSubmitting || !canUpload}
-                            className={`w-full py-4 rounded-2xl font-bold flex items-center justify-center gap-2 text-sm transition-all duration-300 shadow-lg ${isSubmitting || !canUpload ? 'bg-white/5 text-white/40 cursor-not-allowed border border-white/10' : 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white hover:scale-[1.02] active:scale-[0.98] shadow-[#F45D16]/30'}`}
+                            className={`w-full py-4 rounded-2xl font-bold flex items-center justify-center gap-2 text-sm transition-all duration-300 shadow-lg ${isSubmitting || !canUpload ? 'bg-white/5 text-white/40 cursor-not-allowed border border-white/10' : 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white hover:scale-[1.02] active:scale-[0.98] shadow-[#9900cc]/30'}`}
                         >
                             {isSubmitting ? (
                                 <>
@@ -283,7 +283,7 @@ export default function UploadWithdrawal() {
                         </button>
                         {isSubmitting && (
                             <div className="w-full h-1.5 bg-white/10 rounded-full mt-4 overflow-hidden">
-                                <div className="h-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] rounded-full transition-all duration-300" style={{ width: `${uploadProgress}%` }}></div>
+                                <div className="h-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] rounded-full transition-all duration-300" style={{ width: `${uploadProgress}%` }}></div>
                             </div>
                         )}
                     </form>
@@ -415,7 +415,7 @@ export default function UploadWithdrawal() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

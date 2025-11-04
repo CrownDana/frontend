@@ -63,13 +63,13 @@ export default function BonusHub() {
 
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       <div className="max-w-sm mx-auto p-4 relative z-10">
         {/* Header Section */}
         <div className="text-center mb-6 pt-2">
           <div className="inline-flex items-center gap-3 mb-2">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
               <Icon icon="mdi:gift" className="w-7 h-7 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-white">Pusat Bonus</h1>
@@ -83,14 +83,14 @@ export default function BonusHub() {
         <div className="space-y-4 mb-6">
           {/* Spin Wheel Card */}
           <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16]/30 to-[#FF6B35]/30 rounded-2xl blur opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc]/30 to-[#FF6B35]/30 rounded-2xl blur opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
             <button
               onClick={() => router.push('/bonus-hub/spin-wheel')}
               className="relative w-full bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-4 border border-white/10 group-hover:border-white/20 transition-all duration-300"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#F45D16] to-[#FF6B35] rounded-xl flex items-center justify-center shadow-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#9900cc] to-[#FF6B35] rounded-xl flex items-center justify-center shadow-lg">
                     <Icon icon="mdi:dharmachakra" className="w-6 h-6 text-white animate-spin" style={{ animationDuration: '5s' }} />
                   </div>
                   <div>
@@ -105,7 +105,7 @@ export default function BonusHub() {
 
           {/* Bonus Tasks Card */}
           <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#0058BC]/30 to-[#F45D16]/30 rounded-2xl blur opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#0058BC]/30 to-[#9900cc]/30 rounded-2xl blur opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
             <button
               onClick={() => router.push('/bonus-hub/task')}
               className="relative w-full bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-4 border border-white/10 group-hover:border-white/20 transition-all duration-300"
@@ -253,7 +253,7 @@ export default function BonusHub() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

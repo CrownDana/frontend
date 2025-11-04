@@ -101,7 +101,7 @@ export default function Bonus() {
       <div className="stars2"></div>
       <div className='shooting-stars'></div>
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Navigation */}
       <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -122,9 +122,9 @@ export default function Bonus() {
       <div className="max-w-sm mx-auto p-4 relative z-10">
         {/* Hero Section - Compact */}
         <div className="relative mb-5">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-2xl blur opacity-20"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-2xl blur opacity-20"></div>
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-5 border border-white/10 text-center">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center mx-auto mb-3">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center mx-auto mb-3">
               <Icon icon="mdi:gift" className="w-7 h-7 text-white" />
             </div>
             <h2 className="text-lg font-bold text-white mb-2">Raih Bonus Eksklusif</h2>
@@ -138,7 +138,7 @@ export default function Bonus() {
         <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-4 border border-white/10 mb-5">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
-              <Icon icon="mdi:key" className="w-5 h-5 text-[#F45D16]" />
+              <Icon icon="mdi:key" className="w-5 h-5 text-[#9900cc]" />
               <span className="text-white font-semibold text-sm">Kode Referral</span>
             </div>
             <button
@@ -163,8 +163,8 @@ export default function Bonus() {
         {loading ? (
           <div className="flex flex-col items-center justify-center my-12">
             <div className="relative">
-              <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-              <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+              <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
             </div>
             <p className="text-white/70 text-center mt-4 text-sm">Memuat tugas bonus...</p>
           </div>
@@ -188,12 +188,12 @@ export default function Bonus() {
                   className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl border border-white/10 overflow-hidden"
                 >
                   {/* Top Section with Name & Status */}
-                  <div className={`p-4 border-b ${canClaim ? 'bg-gradient-to-r from-[#F45D16]/10 to-[#FF6B35]/10 border-[#F45D16]/20' : 'border-white/5'}`}>
+                  <div className={`p-4 border-b ${canClaim ? 'bg-gradient-to-r from-[#9900cc]/10 to-[#FF6B35]/10 border-[#9900cc]/20' : 'border-white/5'}`}>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                           canClaim 
-                            ? 'bg-gradient-to-br from-[#F45D16] to-[#FF6B35]' 
+                            ? 'bg-gradient-to-br from-[#9900cc] to-[#FF6B35]' 
                             : isTaken 
                               ? 'bg-green-500/20' 
                               : 'bg-white/5'
@@ -209,7 +209,7 @@ export default function Bonus() {
                         </div>
                       </div>
                       {canClaim && (
-                        <div className="bg-gradient-to-r from-[#F45D16] to-[#FF6B35] text-white text-[10px] font-bold py-1 px-2 rounded-lg">
+                        <div className="bg-gradient-to-r from-[#9900cc] to-[#FF6B35] text-white text-[10px] font-bold py-1 px-2 rounded-lg">
                           AKTIF
                         </div>
                       )}
@@ -227,7 +227,7 @@ export default function Bonus() {
                       </div>
                       <div className="bg-white/5 rounded-xl p-3 border border-white/5">
                         <p className="text-white/60 text-[10px] mb-1">Hadiah</p>
-                        <p className="text-[#F45D16] font-bold text-base">
+                        <p className="text-[#9900cc] font-bold text-base">
                           Rp {formatCurrency(task.reward)}
                         </p>
                       </div>
@@ -243,7 +243,7 @@ export default function Bonus() {
                         <div 
                           className={`h-full rounded-full transition-all duration-500 ${
                             canClaim 
-                              ? 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35]' 
+                              ? 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35]' 
                               : 'bg-white/20'
                           }`}
                           style={{ width: `${percent}%` }}
@@ -255,7 +255,7 @@ export default function Bonus() {
                     <button
                       className={`w-full flex items-center justify-center gap-2 font-bold py-3 rounded-xl transition-all duration-300 ${
                         canClaim
-                          ? 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35] text-white hover:scale-[1.02] active:scale-[0.98] shadow-lg'
+                          ? 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35] text-white hover:scale-[1.02] active:scale-[0.98] shadow-lg'
                           : isTaken
                             ? 'bg-green-500/10 text-green-400 cursor-not-allowed border border-green-500/20'
                             : 'bg-white/5 text-white/40 cursor-not-allowed border border-white/10'
@@ -429,7 +429,7 @@ export default function Bonus() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

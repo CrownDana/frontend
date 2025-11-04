@@ -215,7 +215,7 @@ export default function Register() {
     if (passwordStrength <= 1) return 'bg-red-500';
     if (passwordStrength <= 2) return 'bg-orange-500';
     if (passwordStrength <= 3) return 'bg-yellow-500';
-    if (passwordStrength <= 4) return 'bg-[#f45d16]';
+    if (passwordStrength <= 4) return 'bg-[#9900cc]';
     return 'bg-green-500';
   };
 
@@ -246,7 +246,7 @@ export default function Register() {
 
         {/* Gradient overlays matching Ciroos theme */}
         <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
         <div className="relative z-10 w-full max-w-md p-6">
           <div className="glassmorphism-card rounded-3xl p-8 shadow-2xl animate-fadeIn">
@@ -264,13 +264,13 @@ export default function Register() {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div style={{ display: 'none' }} className="w-40 h-40 bg-gradient-to-br from-[#F45D16] to-[#0058BC] rounded-2xl flex items-center justify-center shadow-xl border border-white/10">
+                  <div style={{ display: 'none' }} className="w-40 h-40 bg-gradient-to-br from-[#9900cc] to-[#0058BC] rounded-2xl flex items-center justify-center shadow-xl border border-white/10">
                     <Icon icon="mdi:alpha-c-circle" className="text-white w-24 h-24 drop-shadow-lg" />
                   </div>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-[#EDE5D9] text-sm font-medium" style={{marginTop: '-10px'}}>
-                <Icon icon="mdi:shield-check" className="w-4 h-4 text-[#F45D16]" />
+                <Icon icon="mdi:shield-check" className="w-4 h-4 text-[#9900cc]" />
                 <span>Secured Platform</span>
               </div>
             </div>
@@ -278,7 +278,7 @@ export default function Register() {
             {/* Header Section */}
             <div className="mb-8 text-center">
               <h2 className="text-2xl font-bold text-[#FAF8F6] mb-2 flex items-center justify-center gap-3">
-                <Icon icon="mdi:account-plus" className="w-6 h-6 text-[#F45D16]" />
+                <Icon icon="mdi:account-plus" className="w-6 h-6 text-[#9900cc]" />
                 Daftar Akun Baru
               </h2>
               <p className="text-[#EDE5D9]/80 text-sm flex items-center justify-center gap-2">
@@ -291,7 +291,7 @@ export default function Register() {
             {notification.message && (
               <div className={`mb-6 px-5 py-3 rounded-xl text-sm font-medium flex items-center gap-3 animate-shake backdrop-blur-sm border ${
                 notification.type === 'success'
-                  ? 'bg-[#f45d16]/20 text-[#f45d16] border-[#f45d16]/30'
+                  ? 'bg-[#9900cc]/20 text-[#9900cc] border-[#9900cc]/30'
                   : 'bg-red-500/20 text-red-300 border-red-400/30'
               }`}>
                 <Icon 
@@ -307,7 +307,7 @@ export default function Register() {
               {/* Name Field */}
               <div className="space-y-2">
                 <label htmlFor="name" className="block text-[#EDE5D9] text-sm font-semibold mb-2 flex items-center gap-2">
-                  <Icon icon="mdi:account" className="w-4 h-4 text-[#f45d16]" />
+                  <Icon icon="mdi:account" className="w-4 h-4 text-[#9900cc]" />
                   Nama Lengkap
                 </label>
                 <div className="relative group">
@@ -325,7 +325,7 @@ export default function Register() {
                     />
                     <div className="px-3">
                       {formValidation.name ? (
-                        <Icon icon="mdi:check-circle" className="w-5 h-5 text-[#f45d16]" />
+                        <Icon icon="mdi:check-circle" className="w-5 h-5 text-[#9900cc]" />
                       ) : (
                         <Icon icon="mdi:account-outline" className="w-5 h-5 text-[#EDE5D9]/50" />
                       )}
@@ -337,7 +337,7 @@ export default function Register() {
               {/* Phone Number Field */}
               <div className="space-y-2">
                 <label htmlFor="number" className="block text-[#EDE5D9] text-sm font-semibold mb-2 flex items-center gap-2">
-                  <Icon icon="mdi:phone" className="w-4 h-4 text-[#f45d16]" />
+                  <Icon icon="mdi:phone" className="w-4 h-4 text-[#9900cc]" />
                   Nomor HP
                 </label>
                 <div className="relative group">
@@ -358,7 +358,7 @@ export default function Register() {
                     />
                     <div className="flex items-center shrink-0 px-3">
                       {formValidation.number ? (
-                        <Icon icon="mdi:check-circle" className="w-5 h-5 shrink-0 text-[#f45d16]" />
+                        <Icon icon="mdi:check-circle" className="w-5 h-5 shrink-0 text-[#9900cc]" />
                       ) : (
                         <Icon icon="mdi:phone-outline" className="w-5 h-5 shrink-0 text-[#EDE5D9]/50" />
                       )}
@@ -370,7 +370,7 @@ export default function Register() {
               {/* Password Field */}
               <div className="space-y-2">
                 <label htmlFor="password" className="block text-[#EDE5D9] text-sm font-semibold mb-2 flex items-center gap-2">
-                  <Icon icon="mdi:lock" className="w-4 h-4 text-[#f45d16]" />
+                  <Icon icon="mdi:lock" className="w-4 h-4 text-[#9900cc]" />
                   Password
                 </label>
                 <div className="relative group">
@@ -415,7 +415,7 @@ export default function Register() {
                         <div className="flex items-center gap-2">
                           <Icon 
                             icon={formData.password.length >= 6 ? "mdi:check" : "mdi:close"} 
-                            className={`w-3 h-3 ${formData.password.length >= 6 ? 'text-[#f45d16]' : 'text-red-400'}`} 
+                            className={`w-3 h-3 ${formData.password.length >= 6 ? 'text-[#9900cc]' : 'text-red-400'}`} 
                           />
                           <span>Minimal 6 karakter</span>
                         </div>
@@ -428,7 +428,7 @@ export default function Register() {
               {/* Confirm Password Field */}
               <div className="space-y-2">
                 <label htmlFor="password_confirmation" className="block text-[#EDE5D9] text-sm font-semibold mb-2 flex items-center gap-2">
-                  <Icon icon="mdi:lock-check" className="w-4 h-4 text-[#f45d16]" />
+                  <Icon icon="mdi:lock-check" className="w-4 h-4 text-[#9900cc]" />
                   Konfirmasi Password
                 </label>
                 <div className="relative group">
@@ -472,7 +472,7 @@ export default function Register() {
               {/* Referral Code Field */}
               <div className="space-y-2">
                 <label htmlFor="referral_code" className="block text-[#EDE5D9] text-sm font-semibold mb-2 flex items-center gap-2">
-                  <Icon icon="mdi:gift-outline" className="w-4 h-4 text-[#f45d16]" />
+                  <Icon icon="mdi:gift-outline" className="w-4 h-4 text-[#9900cc]" />
                   Kode Referral
                   <span className="text-xs text-[#EDE5D9]/50">(Opsional)</span>
                 </label>
@@ -492,14 +492,14 @@ export default function Register() {
                       {referralLocked ? (
                         <Icon icon="mdi:lock" className="w-5 h-5 text-yellow-400" />
                       ) : formData.referral_code ? (
-                        <Icon icon="mdi:gift" className="w-5 h-5 text-[#f45d16]" />
+                        <Icon icon="mdi:gift" className="w-5 h-5 text-[#9900cc]" />
                       ) : (
                         <Icon icon="mdi:gift-outline" className="w-5 h-5 text-[#EDE5D9]/50" />
                       )}
                     </div>
                   </div>
                   {referralLocked && (
-                    <div className="text-xs text-[#f45d16] mt-1 flex items-center gap-1">
+                    <div className="text-xs text-[#9900cc] mt-1 flex items-center gap-1">
                       <Icon icon="mdi:information" className="w-4 h-4" />
                       Kode referral dari link undangan, tidak dapat diubah
                     </div>
@@ -512,7 +512,7 @@ export default function Register() {
                 type="submit"
                 className={`w-full font-bold py-4 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg border border-white/10 relative overflow-hidden ${
                   (!maintenanceMode && !closedRegister && isFormValid)
-                    ? 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] hover:shadow-[0_0_30px_rgba(244,93,22,0.4)] hover:scale-105 text-white'
+                    ? 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#7700a3] hover:to-[#9900cc] hover:shadow-[0_0_30px_rgba(153,0,204,0.4)] hover:scale-105 text-white'
                     : 'bg-gray-600/30 text-gray-400 cursor-not-allowed border-gray-600/20'
                 }`}
                 disabled={isLoading || !isFormValid || maintenanceMode || closedRegister}
@@ -575,7 +575,7 @@ export default function Register() {
                 Sudah punya akun?
               </div>
               <Link href="/login">
-                <span className="inline-flex items-center gap-2 text-[#FAF8F6] font-semibold hover:text-[#F45D16] transition-colors duration-200 bg-[#F45D16]/10 px-5 py-2.5 rounded-xl hover:bg-[#F45D16]/20 cursor-pointer border border-[#F45D16]/20 hover:border-[#F45D16]/40">
+                <span className="inline-flex items-center gap-2 text-[#FAF8F6] font-semibold hover:text-[#9900cc] transition-colors duration-200 bg-[#9900cc]/10 px-5 py-2.5 rounded-xl hover:bg-[#9900cc]/20 cursor-pointer border border-[#9900cc]/20 hover:border-[#9900cc]/40">
                   <Icon icon="mdi:login" className="w-4 h-4" />
                   Login Sekarang
                   <Icon icon="mdi:arrow-right" className="w-4 h-4" />
@@ -704,7 +704,7 @@ export default function Register() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

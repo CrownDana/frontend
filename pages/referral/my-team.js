@@ -111,10 +111,10 @@ export default function Team() {
 
   const getLevelGradient = (level) => {
     switch (level) {
-      case '1': return { from: 'from-[#F45D16]', to: 'to-[#FF6B35]', color: '#F45D16' };
-      case '2': return { from: 'from-[#0058BC]', to: 'to-[#F45D16]', color: '#0058BC' };
+      case '1': return { from: 'from-[#9900cc]', to: 'to-[#FF6B35]', color: '#9900cc' };
+      case '2': return { from: 'from-[#0058BC]', to: 'to-[#9900cc]', color: '#0058BC' };
       case '3': return { from: 'from-yellow-500', to: 'to-orange-500', color: '#F59E0B' };
-      default: return { from: 'from-[#F45D16]', to: 'to-[#FF6B35]', color: '#F45D16' };
+      default: return { from: 'from-[#9900cc]', to: 'to-[#FF6B35]', color: '#9900cc' };
     }
   };
 
@@ -143,7 +143,7 @@ export default function Team() {
 
 
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Bar */}
       <div className="bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10 sticky top-0 z-10">
@@ -165,7 +165,7 @@ export default function Team() {
         {/* Stats Cards - Horizontal */}
         <div className="grid grid-cols-3 gap-3 mb-5">
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-3 border border-white/10 text-center">
-            <Icon icon="mdi:cash" className="w-6 h-6 text-[#F45D16] mx-auto mb-2" />
+            <Icon icon="mdi:cash" className="w-6 h-6 text-[#9900cc] mx-auto mb-2" />
             <p className="text-white text-xs font-bold mb-1">{formatCurrency(teamData.totalInvestment)}</p>
             <p className="text-white/60 text-[10px]">Investasi</p>
           </div>
@@ -192,7 +192,7 @@ export default function Team() {
               placeholder="Cari nama atau nomor..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-white/5 border border-white/10 text-white rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-[#F45D16] placeholder-white/50 text-sm"
+              className="w-full bg-white/5 border border-white/10 text-white rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-[#9900cc] placeholder-white/50 text-sm"
             />
           </div>
           
@@ -201,7 +201,7 @@ export default function Team() {
               onClick={() => setFilterStatus('all')}
               className={`flex-1 py-2 rounded-lg text-xs font-semibold transition-all ${
                 filterStatus === 'all' 
-                  ? 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35] text-white' 
+                  ? 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35] text-white' 
                   : 'bg-white/5 text-white/70 hover:bg-white/10'
               }`}
             >
@@ -234,8 +234,8 @@ export default function Team() {
         {loading ? (
           <div className="flex flex-col items-center py-12">
             <div className="relative">
-              <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-              <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+              <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
             </div>
             <p className="text-white/70 text-sm mt-4">Memuat data tim...</p>
           </div>
@@ -287,7 +287,7 @@ export default function Team() {
             <p className="text-white/60 text-sm mb-4">Tim level {level} Anda masih kosong.</p>
             <button
               onClick={() => router.push('/referral')}
-              className="bg-gradient-to-r from-[#F45D16] to-[#FF6B35] text-white font-bold py-2.5 px-5 rounded-xl hover:scale-105 transition-all"
+              className="bg-gradient-to-r from-[#9900cc] to-[#FF6B35] text-white font-bold py-2.5 px-5 rounded-xl hover:scale-105 transition-all"
             >
               Mulai Referral
             </button>
@@ -466,7 +466,7 @@ export default function Team() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

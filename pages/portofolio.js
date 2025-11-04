@@ -106,8 +106,8 @@ export default function InvestasiSaya() {
 
         <div className="flex flex-col items-center relative z-10">
           <div className="relative">
-            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
           </div>
           <p className="text-white/70 text-sm mt-4">Memuat data...</p>
         </div>
@@ -129,8 +129,8 @@ export default function InvestasiSaya() {
       <div className="stars2"></div>
                       <div className="shooting-stars"></div>
 
-      <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Navigation */}
       <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -142,7 +142,7 @@ export default function InvestasiSaya() {
             <ArrowLeft size={24} />
           </button>
           <div className="flex items-center gap-3 mx-auto">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center">
               <Icon icon="mdi:chart-line" className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -156,12 +156,12 @@ export default function InvestasiSaya() {
       <div className="max-w-md mx-auto p-4 relative z-10">
         {/* Header Section */}
         <div className="relative mb-6 mt-2">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur opacity-20"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur opacity-20"></div>
           
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
                   <Icon icon="mdi:account-circle" className="text-white w-8 h-8" />
                 </div>
                 <div>
@@ -178,8 +178,8 @@ export default function InvestasiSaya() {
             <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#F45D16]/20 to-[#FF6B35]/20 flex items-center justify-center">
-                    <Icon icon="mdi:wallet" className="w-4 h-4 text-[#F45D16]" />
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#9900cc]/20 to-[#FF6B35]/20 flex items-center justify-center">
+                    <Icon icon="mdi:wallet" className="w-4 h-4 text-[#9900cc]" />
                   </div>
                   <div>
                     <p className="text-[9px] text-white/60 font-medium uppercase tracking-wide">Total Saldo</p>
@@ -234,7 +234,7 @@ export default function InvestasiSaya() {
                   onClick={() => setActiveTab(key)}
                   className={`min-w-[110px] ${idx === 1 ? 'mx-2' : ''} flex-1 px-5 py-2.5 text-sm font-semibold rounded-2xl transition-all duration-300 flex items-center justify-center gap-3 whitespace-nowrap border ${
                     activeTab === key
-                      ? 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35] text-white border-transparent shadow-lg shadow-[#F45D16]/30 scale-102'
+                      ? 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35] text-white border-transparent shadow-lg shadow-[#9900cc]/30 scale-102'
                       : 'bg-white/5 text-white/70 hover:text-white hover:bg-white/10 border-white/10 hover:scale-102'
                   }`}
                 >
@@ -251,8 +251,8 @@ export default function InvestasiSaya() {
           {invLoading ? (
             <div className="flex flex-col items-center justify-center my-12">
               <div className="relative">
-                <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-                <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+                <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
               </div>
               <p className="text-white/70 text-center mt-4 text-sm">Mengambil data investasi...</p>
             </div>
@@ -279,7 +279,7 @@ export default function InvestasiSaya() {
                   {/* Header */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-gradient-to-br from-[#F45D16] to-[#FF6B35] rounded-xl flex items-center justify-center shadow-lg">
+                      <div className="w-10 h-10 bg-gradient-to-br from-[#9900cc] to-[#FF6B35] rounded-xl flex items-center justify-center shadow-lg">
                         <Icon icon="mdi:receipt-text" className="text-white w-5 h-5" />
                       </div>
                       <div>
@@ -296,7 +296,7 @@ export default function InvestasiSaya() {
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="bg-white/5 rounded-xl p-3 border border-white/10">
                       <div className="flex items-center gap-2 mb-1">
-                        <Icon icon="mdi:wallet" className="text-[#F45D16] w-4 h-4" />
+                        <Icon icon="mdi:wallet" className="text-[#9900cc] w-4 h-4" />
                         <span className="text-white/70 text-xs">Jumlah Investasi</span>
                       </div>
                       <span className="text-white font-semibold text-sm">IDR {formatCurrency(inv.amount)}</span>
@@ -329,7 +329,7 @@ export default function InvestasiSaya() {
                     </div>
                     <div className="h-2.5 bg-white/10 rounded-full overflow-hidden border border-white/10 relative">
                       <div 
-                        className="h-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] rounded-full transition-all duration-500"
+                        className="h-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] rounded-full transition-all duration-500"
                         style={{ width: `${percent}%` }}
                       >
                       </div>
@@ -480,7 +480,7 @@ export default function InvestasiSaya() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

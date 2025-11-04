@@ -101,8 +101,8 @@ export default function Profile() {
 
         <div className="flex flex-col items-center relative z-10">
           <div className="relative">
-            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
           </div>
           <p className="text-white/70 text-sm mt-4">Memuat profil...</p>
         </div>
@@ -124,16 +124,16 @@ export default function Profile() {
       <div className="stars2"></div>
       <div className="shooting-stars"></div>
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       <div className="max-w-md mx-auto p-4 relative z-10">
         {/* Header Section */}
         <div className="relative mb-5">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur opacity-20"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur opacity-20"></div>
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3 flex-1">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
                   <Icon icon="mdi:account-circle" className="text-white w-9 h-9" />
                 </div>
                 <div>
@@ -145,8 +145,8 @@ export default function Profile() {
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <div className={`w-2 h-2 rounded-full ${isVerified ? 'bg-[#F45D16]' : 'bg-red-400'} animate-pulse`}></div>
-                    <span className={`text-xs font-semibold ${isVerified ? 'text-[#F45D16]' : 'text-red-400'}`}>
+                    <div className={`w-2 h-2 rounded-full ${isVerified ? 'bg-[#9900cc]' : 'bg-red-400'} animate-pulse`}></div>
+                    <span className={`text-xs font-semibold ${isVerified ? 'text-[#9900cc]' : 'text-red-400'}`}>
                       {isVerified ? 'Verified' : 'Unverified'}
                     </span>
                   </div>
@@ -159,11 +159,11 @@ export default function Profile() {
         {/* Balance Cards */}
         <div className="grid grid-cols-3 gap-3 mb-5">
           <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-br from-[#F45D16]/50 to-[#FF6B35]/50 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-br from-[#9900cc]/50 to-[#FF6B35]/50 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity"></div>
             <div className="relative bg-[#1A1A1A] rounded-2xl p-3 border border-white/10 text-center">
               <div className="flex items-center justify-center gap-1 mb-2">
-                <div className="w-7 h-7 rounded-lg bg-[#F45D16]/10 flex items-center justify-center">
-                  <Icon icon="mdi:wallet" className="w-4 h-4 text-[#F45D16]" />
+                <div className="w-7 h-7 rounded-lg bg-[#9900cc]/10 flex items-center justify-center">
+                  <Icon icon="mdi:wallet" className="w-4 h-4 text-[#9900cc]" />
                 </div>
               </div>
               <p className="text-white/60 text-[10px] mb-1">Saldo</p>
@@ -208,7 +208,7 @@ export default function Profile() {
         <div className="grid grid-cols-2 gap-3 mb-5">
           <button 
             onClick={() => router.push('/dashboard')}
-            className="bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-3.5 rounded-2xl transition-all duration-300 shadow-lg shadow-[#F45D16]/30 hover:shadow-[#F45D16]/50 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
+            className="bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-3.5 rounded-2xl transition-all duration-300 shadow-lg shadow-[#9900cc]/30 hover:shadow-[#9900cc]/50 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
           >
             <Icon icon="mdi:rocket" className="w-5 h-5" />
             Investasi
@@ -229,7 +229,7 @@ export default function Profile() {
             onClick={() => router.push('/portofolio')}
             className="bg-white/5 hover:bg-white/10 text-white font-semibold py-3 rounded-2xl transition-all duration-300 border border-white/10 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
           >
-            <Icon icon="mdi:chart-line" className="w-5 h-5 text-[#F45D16]" />
+            <Icon icon="mdi:chart-line" className="w-5 h-5 text-[#9900cc]" />
             <span className="text-sm">Portofolio</span>
           </button>
           
@@ -244,7 +244,7 @@ export default function Profile() {
 
         {/* Download APK */}
         <div className="relative mb-5">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-2xl blur opacity-20"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-2xl blur opacity-20"></div>
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl p-5 border border-white/10 text-center">
             <div className="flex items-center justify-center gap-2 mb-3">
               <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center">
@@ -258,7 +258,7 @@ export default function Profile() {
                 href={applicationData.link_app}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:scale-[1.02] active:scale-[0.98]"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:scale-[1.02] active:scale-[0.98]"
               >
                 <Icon icon="mdi:download" className="w-5 h-5" />
                 DOWNLOAD NOW
@@ -278,8 +278,8 @@ export default function Profile() {
             onClick={() => router.push('/history/investment')}
             className="bg-white/5 hover:bg-white/10 text-white font-semibold p-4 rounded-2xl transition-all duration-300 border border-white/10 hover:scale-[1.02] active:scale-[0.98] flex items-center gap-3"
           >
-            <div className="w-10 h-10 bg-[#F45D16]/10 rounded-xl flex items-center justify-center">
-              <Icon icon="mdi:history" className="w-5 h-5 text-[#F45D16]" />
+            <div className="w-10 h-10 bg-[#9900cc]/10 rounded-xl flex items-center justify-center">
+              <Icon icon="mdi:history" className="w-5 h-5 text-[#9900cc]" />
             </div>
             <div className="flex-1 text-left">
               <p className="font-semibold text-sm">Riwayat</p>
@@ -367,21 +367,6 @@ export default function Profile() {
             </button>
           )}
           
-          <a
-            href="https://t.me/vla_channel"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white/5 hover:bg-white/10 text-white font-semibold p-4 rounded-2xl transition-all duration-300 border border-white/10 hover:scale-[1.02] active:scale-[0.98] flex items-center gap-3"
-          >
-            <div className="w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
-              <Icon icon="mdi:whatsapp" className="w-5 h-5 text-green-400" />
-            </div>
-            <div className="flex-1 text-left">
-              <p className="font-semibold text-sm">Saluran</p>
-              <p className="text-xs text-white/60">WhatsApp</p>
-            </div>
-          </a>
-          
           <button 
             onClick={() => router.push('/password')}
             className="bg-white/5 hover:bg-white/10 text-white font-semibold p-4 rounded-2xl transition-all duration-300 border border-white/10 hover:scale-[1.02] active:scale-[0.98] flex items-center gap-3"
@@ -411,12 +396,12 @@ export default function Profile() {
 
         {/* Account Status */}
         <div className="relative mb-5">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16]/30 to-[#0058BC]/30 rounded-2xl blur opacity-50"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc]/30 to-[#0058BC]/30 rounded-2xl blur opacity-50"></div>
           <div className="relative bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl p-4 border border-white/10">
             <div className="flex items-center gap-2 mb-3">
               <Icon 
                 icon={isVerified ? "mdi:shield-check" : "mdi:shield-alert"} 
-                className={`w-5 h-5 ${isVerified ? 'text-[#F45D16]' : 'text-red-400'}`} 
+                className={`w-5 h-5 ${isVerified ? 'text-[#9900cc]' : 'text-red-400'}`} 
               />
               <h3 className="text-white font-bold text-sm">Status Akun</h3>
             </div>
@@ -424,10 +409,10 @@ export default function Profile() {
               <div className="text-center p-3 bg-white/5 rounded-xl border border-white/5">
                 <Icon 
                   icon={isVerified ? "mdi:check-decagram" : "mdi:alert-decagram"} 
-                  className={`w-6 h-6 mx-auto mb-2 ${isVerified ? 'text-[#F45D16]' : 'text-red-400'}`} 
+                  className={`w-6 h-6 mx-auto mb-2 ${isVerified ? 'text-[#9900cc]' : 'text-red-400'}`} 
                 />
                 <p className="text-white/70 text-xs mb-1">Status</p>
-                <p className={`font-bold text-sm ${isVerified ? 'text-[#F45D16]' : 'text-red-400'}`}>
+                <p className={`font-bold text-sm ${isVerified ? 'text-[#9900cc]' : 'text-red-400'}`}>
                   {isVerified ? 'Verified' : 'Unverified'}
                 </p>
               </div>
@@ -575,7 +560,7 @@ export default function Profile() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

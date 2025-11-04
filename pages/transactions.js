@@ -298,8 +298,8 @@ export default function Transactions() {
 
         <div className="flex flex-col items-center relative z-10">
           <div className="relative">
-            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
           </div>
           <p className="text-white/70 text-sm mt-4">Memuat riwayat transaksi...</p>
         </div>
@@ -321,7 +321,7 @@ export default function Transactions() {
       <div className="stars2"></div>
       <div className='shooting-stars'></div>
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Navigation */}
       <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -341,7 +341,7 @@ export default function Transactions() {
         {/* Header Section */}
         <div className="text-center mb-6 pt-2">
           <div className="inline-flex items-center gap-3 mb-2">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
               <Icon icon="mdi:swap-horizontal-bold" className="w-7 h-7 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-white">Riwayat Transaksi</h1>
@@ -355,8 +355,8 @@ export default function Transactions() {
         <div className="grid grid-cols-2 gap-3 mb-6">
           <div className="bg-[#1A1A1A] rounded-2xl p-4 border border-white/10">
             <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-[#F45D16]/10 flex items-center justify-center">
-                <Icon icon="mdi:counter" className="text-[#F45D16] w-4 h-4" />
+              <div className="w-8 h-8 rounded-lg bg-[#9900cc]/10 flex items-center justify-center">
+                <Icon icon="mdi:counter" className="text-[#9900cc] w-4 h-4" />
               </div>
               <span className="text-white/70 text-xs font-medium">Total Transaksi</span>
             </div>
@@ -384,7 +384,7 @@ export default function Transactions() {
                 onClick={() => handleFilterChange(option.value)}
                 className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 whitespace-nowrap border ${
                   selectedFilter === option.value
-                    ? 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35] text-white border-transparent shadow-lg shadow-[#F45D16]/30 scale-105'
+                    ? 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35] text-white border-transparent shadow-lg shadow-[#9900cc]/30 scale-105'
                     : 'bg-white/5 text-white/70 hover:text-white hover:bg-white/10 border-white/10 hover:scale-102'
                 }`}
               >
@@ -633,7 +633,7 @@ export default function Transactions() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

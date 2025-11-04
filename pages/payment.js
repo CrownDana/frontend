@@ -138,12 +138,12 @@ export default function Payment() {
 
         
         <div className="relative">
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur-xl opacity-30"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur-xl opacity-30"></div>
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-8 border border-white/10 shadow-2xl max-w-md w-full text-center">
             <div className="flex flex-col items-center gap-4">
               <div className="relative">
-                <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-                <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+                <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
               </div>
               <p className="text-white/80 text-sm animate-pulse">Memuat data pembayaran...</p>
             </div>
@@ -180,7 +180,7 @@ export default function Payment() {
               </div>
               <button
                 onClick={() => router.push('/dashboard')}
-                className="bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg"
+                className="bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg"
               >
                 Kembali ke Dashboard
               </button>
@@ -211,14 +211,14 @@ export default function Payment() {
       <div className="stars"></div>
       <div className="stars1"></div>
       <div className="stars2"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       <div className="max-w-md w-full mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 mb-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center">
               <Icon icon="mdi:cash-check" className="w-6 h-6 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-white">Pembayaran</h1>
@@ -228,19 +228,19 @@ export default function Payment() {
 
         {/* Main Card */}
         <div className="relative animate-fadeIn">
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur-lg opacity-30"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur-lg opacity-30"></div>
           
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
             {/* Timer Bar */}
             <div className={`px-6 py-4 border-b border-white/10 ${
               expired 
                 ? 'bg-gradient-to-r from-red-500/20 to-red-600/20' 
-                : 'bg-gradient-to-r from-[#F45D16]/10 to-[#0058BC]/10'
+                : 'bg-gradient-to-r from-[#9900cc]/10 to-[#0058BC]/10'
             }`}>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Icon icon={expired ? "mdi:clock-alert" : "mdi:clock-outline"} 
-                    className={`w-5 h-5 ${expired ? 'text-red-400' : 'text-[#F45D16]'}`} 
+                    className={`w-5 h-5 ${expired ? 'text-red-400' : 'text-[#9900cc]'}`} 
                   />
                   <span className="text-white/80 text-sm font-medium">
                     {expired ? 'Waktu Habis' : 'Batas Waktu'}
@@ -267,7 +267,7 @@ export default function Payment() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-white/70 text-sm">Nominal</span>
-                    <span className="text-[#F45D16] font-bold text-base">{formatCurrency(amount)}</span>
+                    <span className="text-[#9900cc] font-bold text-base">{formatCurrency(amount)}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-white/70 text-sm">Metode</span>
@@ -281,7 +281,7 @@ export default function Payment() {
               {/* Order ID */}
               <div>
                 <label className="block text-white/70 text-xs font-medium mb-2 flex items-center gap-2">
-                  <Icon icon="mdi:identifier" className="w-4 h-4 text-[#F45D16]" />
+                  <Icon icon="mdi:identifier" className="w-4 h-4 text-[#9900cc]" />
                   Order ID
                 </label>
                 <div className="flex items-center gap-2 bg-white/5 rounded-xl p-3 border border-white/10">
@@ -301,9 +301,9 @@ export default function Payment() {
 
               {/* Payment Details */}
               {paymentMethod === 'QRIS' ? (
-                <div className="bg-gradient-to-br from-[#F45D16]/10 to-[#FF6B35]/10 rounded-2xl p-5 border border-[#F45D16]/20">
+                <div className="bg-gradient-to-br from-[#9900cc]/10 to-[#FF6B35]/10 rounded-2xl p-5 border border-[#9900cc]/20">
                   <div className="flex items-center gap-2 mb-4">
-                    <Icon icon="mdi:qrcode-scan" className="w-5 h-5 text-[#F45D16]" />
+                    <Icon icon="mdi:qrcode-scan" className="w-5 h-5 text-[#9900cc]" />
                     <h3 className="text-white font-bold text-base">Scan QR Code</h3>
                   </div>
                   
@@ -317,7 +317,7 @@ export default function Payment() {
                   
                   <button
                     onClick={() => handleDownloadQR(qrUrl)}
-                    className="w-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+                    className="w-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
                   >
                     <Icon icon="mdi:download" className="w-5 h-5" />
                     Download QR Code
@@ -328,7 +328,7 @@ export default function Payment() {
                   </p>
                 </div>
               ) : (
-                <div className="bg-gradient-to-br from-[#0058BC]/10 to-[#F45D16]/10 rounded-2xl p-5 border border-[#0058BC]/20">
+                <div className="bg-gradient-to-br from-[#0058BC]/10 to-[#9900cc]/10 rounded-2xl p-5 border border-[#0058BC]/20">
                   <div className="flex items-center gap-2 mb-4">
                     <Icon icon="mdi:bank-transfer" className="w-5 h-5 text-[#0058BC]" />
                     <h3 className="text-white font-bold text-base">Transfer Bank</h3>
@@ -364,7 +364,7 @@ export default function Payment() {
               {/* Complete Button */}
               <button
                 onClick={() => router.push('/dashboard')}
-                className="w-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg shadow-[#F45D16]/30 hover:shadow-[#F45D16]/50 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg shadow-[#9900cc]/30 hover:shadow-[#9900cc]/50 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
               >
                 <Icon icon="mdi:check-circle" className="w-5 h-5" />
                 Pembayaran Selesai

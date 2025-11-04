@@ -249,8 +249,8 @@ export default function RiwayatDeposit() {
 
         <div className="flex flex-col items-center relative z-10">
           <div className="relative">
-            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+            <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
           </div>
           <p className="text-white/70 text-sm mt-4">Memuat riwayat investasi...</p>
         </div>
@@ -271,8 +271,8 @@ export default function RiwayatDeposit() {
 <div className="stars1"></div>
 <div className="stars2"></div>
 <div className='shooting-stars'></div>
-<div className="absolute inset-0 bg-[image:var(--gradient-top-right)]"></div>
-<div className="absolute inset-0 bg-[image:var(--gradient-bottom-left)]"></div>
+<div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+<div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       {/* Top Navigation */}
       <div className="sticky top-0 z-20 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10">
@@ -292,7 +292,7 @@ export default function RiwayatDeposit() {
         {/* Header Section */}
         <div className="text-center mb-6 pt-2">
           <div className="inline-flex items-center gap-3 mb-2">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
               <Icon icon="mdi:history" className="w-7 h-7 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-white">Riwayat Investasi</h1>
@@ -306,8 +306,8 @@ export default function RiwayatDeposit() {
         <div className="grid grid-cols-2 gap-3 mb-6">
           <div className="bg-[#1A1A1A] rounded-2xl p-4 border border-white/10">
             <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-[#F45D16]/10 flex items-center justify-center">
-                <Icon icon="mdi:counter" className="text-[#F45D16] w-4 h-4" />
+              <div className="w-8 h-8 rounded-lg bg-[#9900cc]/10 flex items-center justify-center">
+                <Icon icon="mdi:counter" className="text-[#9900cc] w-4 h-4" />
               </div>
               <span className="text-white/70 text-xs font-medium">Total Transaksi</span>
             </div>
@@ -363,7 +363,7 @@ export default function RiwayatDeposit() {
                   {/* Header with Order ID and Status */}
                   <div className="flex justify-between items-center mb-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-gradient-to-br from-[#F45D16] to-[#FF6B35] rounded-xl flex items-center justify-center shadow-lg">
+                      <div className="w-10 h-10 bg-gradient-to-br from-[#9900cc] to-[#FF6B35] rounded-xl flex items-center justify-center shadow-lg">
                         <Icon icon="mdi:receipt-text" className="text-white w-5 h-5" />
                       </div>
                       <div>
@@ -397,7 +397,7 @@ export default function RiwayatDeposit() {
                     <div className="pt-4 border-t border-white/10">
                       <button
                         onClick={() => router.push(`/payment?order_id=${investment.order_id}`)}
-                        className="w-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#F45D16]/30 hover:shadow-[#F45D16]/50 hover:scale-[1.02] active:scale-[0.98]"
+                        className="w-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#9900cc]/30 hover:shadow-[#9900cc]/50 hover:scale-[1.02] active:scale-[0.98]"
                       >
                         <Icon icon="mdi:credit-card-check" className="w-5 h-5" />
                         <span>Bayar Sekarang</span>
@@ -568,7 +568,7 @@ export default function RiwayatDeposit() {
         }
           
         .input-field:focus-within {
-            border-color: #F45D16;
+            border-color: #9900cc;
             box-shadow: 0 0 0 3px rgba(244, 93, 22, 0.2);
         }
 

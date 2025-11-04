@@ -119,14 +119,14 @@ export default function Dashboard() {
 
   const getVerificationStatus = () => {
     if (userData?.active) {
-      return { text: 'Verified Investor', color: 'text-[#F45D16]' };
+      return { text: 'Verified Investor', color: 'text-[#9900cc]' };
     }
     return { text: 'Unverified Investor', color: 'text-red-400' };
   };
 
   const getHealthStatus = () => {
     if (applicationData?.healthy) {
-      return { text: 'Healthy', color: 'text-[#F45D16]' };
+      return { text: 'Healthy', color: 'text-[#9900cc]' };
     }
     return { text: 'Unhealthy', color: 'text-red-400' };
   };
@@ -154,7 +154,7 @@ export default function Dashboard() {
       <div className="stars2"></div>
       <div className="shooting-stars"></div>
       <div className="absolute inset-0 bg-[radial-gradient(100%_80%_at_85%_0%,rgba(0,88,188,0.3)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(255,100,0,0.25)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_0%_100%,rgba(153,0,204,0.4)_0%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0)_100%)]"></div>
 
       <div className="max-w-sm mx-auto p-4 relative z-10">
         {/* Header with Logo - Simplified */}
@@ -173,16 +173,16 @@ export default function Dashboard() {
               }}
             />
             <div className="hidden items-center gap-2" style={{ display: 'none' }}>
-              <Icon icon="mdi:alpha-c-circle" className="text-[#F45D16] w-8 h-8" />
+              <Icon icon="mdi:alpha-c-circle" className="text-[#9900cc] w-8 h-8" />
               <span className="text-white font-bold text-lg">{applicationData?.name || 'Ciroos AI'}</span>
             </div>
           </div>
           
           <button 
             onClick={() => router.push('/portofolio')}
-            className="flex items-center gap-2 bg-gradient-to-r from-[#F45D16]/10 to-[#FF6B35]/10 hover:from-[#F45D16]/20 hover:to-[#FF6B35]/20 text-[#FAF8F6] px-4 py-2.5 rounded-2xl transition-all duration-300 border border-[#F45D16]/30"
+            className="flex items-center gap-2 bg-gradient-to-r from-[#9900cc]/10 to-[#FF6B35]/10 hover:from-[#9900cc]/20 hover:to-[#FF6B35]/20 text-[#FAF8F6] px-4 py-2.5 rounded-2xl transition-all duration-300 border border-[#9900cc]/30"
           >
-            <Icon icon="mdi:chart-line" className="w-4 h-4 text-[#F45D16]" />
+            <Icon icon="mdi:chart-line" className="w-4 h-4 text-[#9900cc]" />
             <span className="text-sm font-semibold">Portfolio</span>
           </button>
         </div>
@@ -190,18 +190,18 @@ export default function Dashboard() {
         {/* User Card - New Design */}
         <div className="relative mb-5">
           {/* Glow Effect */}
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F45D16] to-[#0058BC] rounded-3xl blur opacity-20"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-[#9900cc] to-[#0058BC] rounded-3xl blur opacity-20"></div>
           
           <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/5">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
                   <Icon icon="mdi:account-circle" className="text-white w-8 h-8" />
                 </div>
                 <div>
                   <h1 className="text-lg font-bold text-white mb-0.5">{userData?.name || 'Tester'}</h1>
                   <div className="flex items-center gap-1.5">
-                    <div className={`w-2 h-2 rounded-full ${userData?.active ? 'bg-[#F45D16]' : 'bg-red-400'} animate-pulse`}></div>
+                    <div className={`w-2 h-2 rounded-full ${userData?.active ? 'bg-[#9900cc]' : 'bg-red-400'} animate-pulse`}></div>
                     <span className={`text-xs ${getVerificationStatus().color} font-medium`}>
                       {getVerificationStatus().text}
                     </span>
@@ -210,7 +210,7 @@ export default function Dashboard() {
               </div>
               
               <div className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-xl border border-white/10">
-                <Icon icon="mdi:shield-check" className="w-3.5 h-3.5 text-[#F45D16]" />
+                <Icon icon="mdi:shield-check" className="w-3.5 h-3.5 text-[#9900cc]" />
                 <span className="text-[10px] text-white/80 font-semibold">Secured</span>
               </div>
             </div>
@@ -218,8 +218,8 @@ export default function Dashboard() {
             <div className="bg-white/5 rounded-2xl p-4 border border-white/10">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#F45D16]/20 to-[#FF6B35]/20 flex items-center justify-center">
-                    <Icon icon="mdi:wallet" className="w-4 h-4 text-[#F45D16]" />
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#9900cc]/20 to-[#FF6B35]/20 flex items-center justify-center">
+                    <Icon icon="mdi:wallet" className="w-4 h-4 text-[#9900cc]" />
                   </div>
                   <div>
                     <p className="text-[9px] text-white/60 font-medium uppercase tracking-wide">Total Saldo</p>
@@ -234,11 +234,11 @@ export default function Dashboard() {
         {/* Quick Stats - Redesigned */}
         {/*<div className="grid grid-cols-2 gap-3 mb-6">
           <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-br from-[#F45D16]/50 to-[#FF6B35]/50 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-br from-[#9900cc]/50 to-[#FF6B35]/50 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity"></div>
             <div className="relative bg-[#1A1A1A] rounded-2xl p-4 border border-white/10">
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-8 h-8 rounded-lg bg-[#F45D16]/10 flex items-center justify-center">
-                  <Icon icon="mdi:chart-box" className="text-[#F45D16] w-4 h-4" />
+                <div className="w-8 h-8 rounded-lg bg-[#9900cc]/10 flex items-center justify-center">
+                  <Icon icon="mdi:chart-box" className="text-[#9900cc] w-4 h-4" />
                 </div>
                 <span className="text-white/70 text-xs font-medium">Produk</span>
               </div>
@@ -247,7 +247,7 @@ export default function Dashboard() {
           </div>
           
           <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-br from-[#0058BC]/50 to-[#F45D16]/50 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-br from-[#0058BC]/50 to-[#9900cc]/50 rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity"></div>
             <div className="relative bg-[#1A1A1A] rounded-2xl p-4 border border-white/10">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-8 h-8 rounded-lg bg-[#0058BC]/10 flex items-center justify-center">
@@ -264,8 +264,8 @@ export default function Dashboard() {
         {loading && (
           <div className="flex flex-col items-center justify-center my-12">
             <div className="relative">
-              <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#F45D16]/20 border-t-[#F45D16]"></div>
-              <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#F45D16]/40"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-3 border-[#9900cc]/20 border-t-[#9900cc]"></div>
+              <div className="absolute inset-0 animate-ping rounded-full h-12 w-12 border-2 border-[#9900cc]/40"></div>
             </div>
             <p className="text-white/70 text-center mt-4 text-sm">Memuat produk investasi...</p>
           </div>
@@ -303,7 +303,7 @@ export default function Dashboard() {
             ) : (
               <>
                 <div className="flex items-center gap-2 mb-4">
-                  <Icon icon="mdi:rocket-launch" className="text-[#F45D16] w-5 h-5" />
+                  <Icon icon="mdi:rocket-launch" className="text-[#9900cc] w-5 h-5" />
                   <h2 className="text-lg font-bold text-white">Produk Investasi</h2>
                 </div>
 
@@ -316,7 +316,7 @@ export default function Dashboard() {
                       className={`
                         px-4 py-2 rounded-2xl font-semibold transition-all duration-300 whitespace-nowrap flex items-center gap-2 border text-sm
                         ${selectedProduct?.id === product.id
-                          ? 'bg-gradient-to-r from-[#F45D16] to-[#FF6B35] text-white border-transparent shadow-lg shadow-[#F45D16]/30 scale-102'
+                          ? 'bg-gradient-to-r from-[#9900cc] to-[#FF6B35] text-white border-transparent shadow-lg shadow-[#9900cc]/30 scale-102'
                           : 'bg-white/5 text-white/70 hover:text-white hover:bg-white/10 border-white/10 hover:scale-102'
                         }
                       `}
@@ -331,11 +331,11 @@ export default function Dashboard() {
                 {selectedProduct && (
                   <div className="relative">
                     {/* Glow */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-[#F45D16] to-[#FF6B35] rounded-3xl blur-lg opacity-20"></div>
+                    <div className="absolute -inset-1 bg-gradient-to-r from-[#9900cc] to-[#FF6B35] rounded-3xl blur-lg opacity-20"></div>
                     
                     <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl p-5 border border-white/10">
                       <div className="flex items-center gap-3 mb-5">
-                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#F45D16] to-[#FF6B35] flex items-center justify-center shadow-lg">
+                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#9900cc] to-[#FF6B35] flex items-center justify-center shadow-lg">
                           <Icon icon={getStarIcon(selectedProduct.name)} className="text-white w-6 h-6" />
                         </div>
                         <div>
@@ -347,7 +347,7 @@ export default function Dashboard() {
                       <div className="space-y-3 mb-5">
                         <div className="flex items-center justify-between bg-white/5 rounded-xl p-3 border border-white/10">
                           <div className="flex items-center gap-2">
-                            <Icon icon="mdi:arrow-down-circle" className="w-4 h-4 text-[#F45D16]" />
+                            <Icon icon="mdi:arrow-down-circle" className="w-4 h-4 text-[#9900cc]" />
                             <span className="text-xs text-white/70 font-medium">Minimum</span>
                           </div>
                           <span className="text-sm font-bold text-white">{formatCurrency(selectedProduct.minimum)}</span>
@@ -362,11 +362,11 @@ export default function Dashboard() {
                         </div>
                         
                         <div className="grid grid-cols-2 gap-3">
-                          <div className="bg-gradient-to-br from-[#F45D16]/10 to-[#FF6B35]/10 rounded-xl p-3 border border-[#F45D16]/20">
+                          <div className="bg-gradient-to-br from-[#9900cc]/10 to-[#FF6B35]/10 rounded-xl p-3 border border-[#9900cc]/20">
                             <p className="text-[10px] text-white/60 font-medium mb-1">HARIAN</p>
-                            <p className="text-lg font-bold text-[#F45D16]">{Math.ceil((selectedProduct.percentage * 2 / selectedProduct.duration))}%</p>
+                            <p className="text-lg font-bold text-[#9900cc]">{Math.ceil((selectedProduct.percentage * 2 / selectedProduct.duration))}%</p>
                           </div>
-                          <div className="bg-gradient-to-br from-[#0058BC]/10 to-[#F45D16]/10 rounded-xl p-3 border border-[#0058BC]/20">
+                          <div className="bg-gradient-to-br from-[#0058BC]/10 to-[#9900cc]/10 rounded-xl p-3 border border-[#0058BC]/20">
                             <p className="text-[10px] text-white/60 font-medium mb-1">TOTAL</p>
                             <p className="text-lg font-bold text-[#0058BC]">{selectedProduct.percentage * 2}%</p>
                           </div>
@@ -375,7 +375,7 @@ export default function Dashboard() {
 
                       <button
                         onClick={() => { setShowModal(true); }}
-                        className="w-full bg-gradient-to-r from-[#F45D16] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#F45D16] text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg shadow-[#F45D16]/30 hover:shadow-[#F45D16]/50 hover:scale-[1.02] active:scale-[0.98]"
+                        className="w-full bg-gradient-to-r from-[#9900cc] to-[#FF6B35] hover:from-[#d74e0f] hover:to-[#9900cc] text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg shadow-[#9900cc]/30 hover:shadow-[#9900cc]/50 hover:scale-[1.02] active:scale-[0.98]"
                       >
                         <Icon icon="mdi:rocket" className="w-5 h-5" />
                         INVESTASI SEKARANG
@@ -406,7 +406,7 @@ export default function Dashboard() {
       {/* Popup Modal */}
       {showPopup && (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 p-4 animate-fadeIn">
-          <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl border-2 border-[#F45D16]/50 shadow-2xl shadow-[#F45D16]/20 max-w-sm w-full overflow-hidden animate-slideUp">
+          <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-3xl border-2 border-[#9900cc]/50 shadow-2xl shadow-[#9900cc]/20 max-w-sm w-full overflow-hidden animate-slideUp">
             <button
               onClick={handleClosePopup}
               className="absolute top-3 right-3 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 shadow-lg"
@@ -414,7 +414,7 @@ export default function Dashboard() {
               <Icon icon="mdi:close" className="w-5 h-5" />
             </button>
             <div className="relative">
-              <div className="w-full aspect-square bg-gradient-to-r from-[#F45D16] to-[#0058BC] flex items-center justify-center relative overflow-hidden">
+              <div className="w-full aspect-square bg-gradient-to-r from-[#9900cc] to-[#0058BC] flex items-center justify-center relative overflow-hidden">
                 <Image 
                   src="/popup.png" 
                   alt="Welcome to Ciroos AI" 
@@ -426,7 +426,7 @@ export default function Dashboard() {
                     if (fallback) fallback.style.display = 'flex';
                   }}
                 />
-                <div id="popup-fallback" className="hidden flex-col items-center justify-center text-white text-center p-4 absolute inset-0 bg-gradient-to-r from-[#F45D16] to-[#0058BC]">
+                <div id="popup-fallback" className="hidden flex-col items-center justify-center text-white text-center p-4 absolute inset-0 bg-gradient-to-r from-[#9900cc] to-[#0058BC]">
                   <div className="text-4xl font-bold mb-2">🎉</div>
                   <h3 className="text-2xl font-bold mb-1">PROMO BESAR-BESARAN</h3>
                   <div className="text-3xl font-extrabold mb-2">BONUS 10%!</div>
@@ -439,7 +439,7 @@ export default function Dashboard() {
                     id="hidePopup"
                     checked={hidePopupChecked}
                     onChange={(e) => setHidePopupChecked(e.target.checked)}
-                    className="w-4 h-4 rounded border-gray-500 bg-transparent text-[#F45D16] focus:ring-[#F45D16]"
+                    className="w-4 h-4 rounded border-gray-500 bg-transparent text-[#9900cc] focus:ring-[#9900cc]"
                   />
                   <label htmlFor="hidePopup" className="text-white/80 text-sm">
                     Jangan tampilkan lagi selama 10 menit
