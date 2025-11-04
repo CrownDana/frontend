@@ -487,8 +487,7 @@ export default function AdminSettings() {
                       value={settings.link_cs}
                       onChange={handleInputChange}
                       className="w-full bg-white/10 border border-white/20 text-white rounded-2xl px-4 py-3 pl-12 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
-                      placeholder="https://wa.me/628123456789"
-                      required
+                      placeholder="https://t.me/customerservice"
                     />
                   </div>
                 </div>
@@ -503,8 +502,7 @@ export default function AdminSettings() {
                       value={settings.link_group}
                       onChange={handleInputChange}
                       className="w-full bg-white/10 border border-white/20 text-white rounded-2xl px-4 py-3 pl-12 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder="https://t.me/jasasitusponzi"
-                      required
+                      placeholder="https://t.me/group"
                     />
                   </div>
                 </div>
@@ -520,7 +518,6 @@ export default function AdminSettings() {
                       onChange={handleInputChange}
                       className="w-full bg-white/10 border border-white/20 text-white rounded-2xl px-4 py-3 pl-12 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
                       placeholder="https://play.google.com/store/apps/details?id=..."
-                      required
                     />
                   </div>
                 </div>
