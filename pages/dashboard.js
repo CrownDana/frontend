@@ -416,7 +416,7 @@ export default function Dashboard() {
             <div className="relative">
               <div className="w-full aspect-square bg-gradient-to-r from-[#9900cc] to-[#0058BC] flex items-center justify-center relative overflow-hidden">
                 <Image 
-                  src="/popup.png" 
+                  src="/popup.jpg" 
                   alt="Welcome to CrownDana" 
                   className="w-full h-full object-cover"
                   layout="fill"
